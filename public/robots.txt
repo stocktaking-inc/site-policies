@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Allow: /
+
+Sitemap: https://site-policies.vercel.app/sitemap-index.xml
