@@ -1,4 +1,11 @@
 ---
+import { getCopyright } from '../utils/copyright.ts';
+
+const operator = "SmartTally"
+const msrn = "xxxxxxxxxxxxxxx"
+const tin = "xxxxxxxxxxxx"
+const email = "Jlwxd@mail.ru"
+const tel_num = "8-800-555-35-55"
 ---
 
 <html lang="ru">
@@ -6,38 +13,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Политика конфиденциальности</title>
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <main>
       <header>
-        <h1 id="main-title">Политика конфиденциальности</h1>
+        <h1>Политика конфиденциальности</h1>
       </header>
 
       <nav aria-label="Оглавление">
         <ul>
-          <li><a href="#operator">1. Оператор персональных данных</a></li>
-          <li><a href="#definitions">2. Определения</a></li>
-          <li><a href="#categories">3. Категории собираемых данных</a></li>
-          <li><a href="#purposes">4. Цели обработки</a></li>
-          <li><a href="#legal">5. Правовые основания</a></li>
-          <li><a href="#sharing">6. Передача данных</a></li>
-          <li><a href="#crossborder">7. Трансграничная передача</a></li>
-          <li><a href="#cookies">8. Cookies и аналитика</a></li>
-          <li><a href="#security">9. Безопасность</a></li>
-          <li><a href="#rights">10. Права субъектов</a></li>
-          <li><a href="#retention">11. Сроки хранения</a></li>
-          <li><a href="#roskomnadzor">12. Уведомление Роскомнадзора</a></li>
-          <li><a href="#changes">13. Изменения в политике</a></li>
+          <li><a href="#operator" tabindex="0">1. Оператор персональных данных</a></li>
+          <li><a href="#definitions" tabindex="0">2. Определения</a></li>
+          <li><a href="#categories" tabindex="0">3. Категории собираемых данных</a></li>
+          <li><a href="#purposes" tabindex="0">4. Цели обработки</a></li>
+          <li><a href="#legal" tabindex="0">5. Правовые основания</a></li>
+          <li><a href="#sharing" tabindex="0">6. Передача данных</a></li>
+          <li><a href="#crossborder" tabindex="0">7. Трансграничная передача</a></li>
+          <li><a href="#cookies" tabindex="0">8. Cookies и аналитика</a></li>
+          <li><a href="#security" tabindex="0">9. Безопасность</a></li>
+          <li><a href="#rights" tabindex="0">10. Права субъектов</a></li>
+          <li><a href="#retention" tabindex="0">11. Сроки хранения</a></li>
+          <li><a href="#roskomnadzor" tabindex="0">12. Уведомление Роскомнадзора</a></li>
+          <li><a href="#changes" tabindex="0">13. Изменения в политике</a></li>
         </ul>
       </nav>
 
       <article>
         <section id="operator" role="region" aria-labelledby="operator-heading">
           <h2 id="operator-heading">1. Оператор персональных данных</h2>
-          <p>Оператор: <strong>&lt;SmartTally&gt;</strong></p>
-          <p>ОГРН: <strong>&lt;xxxxxxxxxxxxxxx&gt;</strong>, ИНН: <strong>&lt;xxxxxxxxxxxx&gt;</strong></p>
+          <p>Оператор: <strong>{operator}</strong></p>
+          <p>ОГРН: <strong>{msrn}</strong>, ИНН: <strong>{tin}</strong></p>
           <address>
-            Контакт: <a href="mailto:Jlwxd@mail.ru">Jlwxd@mail.ru</a>, тел: 8-800-555-35-55
+            Контакт: <a href="mailto:Jlwxd@mail.ru" tabindex="0">{email}</a>, 
+            тел: <a href="tel:8-800-555 35 55" tabindex="0">{tel_num}</a>
           </address>
         </section>
 
@@ -125,7 +134,7 @@
             <li>Право на отзыв согласия.</li>
             <li>Право на обращение в Роскомнадзор.</li>
           </ul>
-          <p>Запросы направляйте по адресу: <a href="mailto:email@example.com">email@example.com</a>. Ответ в течение 30 дней.</p>
+          <p>Запросы направляйте по адресу: <a href="mailto:Jlwxd@mail.ru" tabindex="0">{email}</a>. Ответ в течение 30 дней.</p>
         </section>
 
         <section id="retention" role="region" aria-labelledby="retention-heading">
@@ -143,6 +152,10 @@
           <p>Мы можем обновлять Политику при изменениях законодательства или процессов. Актуальная версия всегда доступна на Сайте.</p>
         </section>
       </article>
+
+      <footer>
+        <p>{getCopyright()}</p>
+      </footer>
     </main>
   </body>
 </html>

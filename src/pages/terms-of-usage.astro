@@ -1,28 +1,36 @@
 ---
+import { getCopyright } from './utils/copyright.ts';
+
+const operator = "SmartTally"
+const msrn = "xxxxxxxxxxxxxxx"
+const tin = "xxxxxxxxxxxx"
+const email = "Jlwxd@mail.ru"
+const tel_num = "8-800-555-35-55"
 ---
 
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>Условия использования</title>
   </head>
   <body>
     <main>
       <header>
-        <h1 id="title">Условия использования</h1>
+        <h1> Условия использования</h1>
       </header>
 
       <nav aria-label="Оглавление">
         <ul>
-          <li><a href="#general">1. Общие положения</a></li>
-          <li><a href="#usage">2. Условия использования сервиса</a></li>
-          <li><a href="#data">3. Сбор и использование данных</a></li>
-          <li><a href="#rights">4. Права пользователя</a></li>
-          <li><a href="#security">5. Безопасность данных</a></li>
-          <li><a href="#termination">6. Прекращение использования</a></li>
-          <li><a href="#liability">7. Ограничение ответственности</a></li>
-          <li><a href="#changes">8. Изменения условий</a></li>
+          <li><a href="#general" tabindex="0">1. Общие положения</a></li>
+          <li><a href="#usage" tabindex="0">2. Условия использования сервиса</a></li>
+          <li><a href="#data" tabindex="0">3. Сбор и использование данных</a></li>
+          <li><a href="#rights" tabindex="0">4. Права пользователя</a></li>
+          <li><a href="#security" tabindex="0">5. Безопасность данных</a></li>
+          <li><a href="#termination" tabindex="0">6. Прекращение использования</a></li>
+          <li><a href="#liability" tabindex="0">7. Ограничение ответственности</a></li>
+          <li><a href="#changes" tabindex="0">8. Изменения условий</a></li>
         </ul>
       </nav>
 
@@ -31,12 +39,13 @@
           <h2 id="general-heading">1. Общие положения</h2>
           <p>Настоящее соглашение регулирует условия использования сервиса «Система инвентаризации логистических и торговых микро-предприятий».</p>
           <address>
-            Оператор персональных данных:<br>
-            SmartTally<br>
-            ИНН: xxxxxxxxxxxx, ОГРНИП: xxxxxxxxxxxxxxx<br>
-            E-mail: <a href="mailto:Jlwxd@mail.ru">Jlwxd@mail.ru</a>
-          </address>
-        </section>
+            <p>Оператор: <strong>{operator}</strong></p>
+            <p>ОГРН: <strong>{msrn}</strong>, ИНН: <strong>{tin}</strong></p>
+            <address>
+              Контакт: <a href="mailto:Jlwxd@mail.ru" tabindex="0">{email}</a>, 
+              тел: <a href="tel:8-800-555 35 55" tabindex="0">{tel_num}</a>
+            </address>
+          </section>
 
         <section id="usage" role="region" aria-labelledby="usage-heading">
           <h2 id="usage-heading">2. Условия использования сервиса</h2>
@@ -94,7 +103,7 @@
       </article>
 
       <footer>
-        <p>&copy; 2025 Система инвентаризации. Все права защищены.</p>
+        <p>{getCopyright()}</p>
       </footer>
     </main>
   </body>
