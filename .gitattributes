@@ -4,19 +4,7 @@
 *.md        text eol=lf
 *.mjs       text eol=lf
 
-*.astro     diff=html
+*.astro     diff
 *.json      diff=json
 *.md        diff=markdown
 *.mjs       diff=javascript
-
-*.astro     linguist-language=HTML
-*.json      linguist-language=JSON
-*.md        linguist-language=Markdown
-*.mjs       linguist-language=JavaScript
-
-node_modules/* export-ignore
-*.log       export-ignore
-*.lock      export-ignore
-.gitignore  export-ignore
-.gitattributes export-ignore
-.editorconfig export-ignore
