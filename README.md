@@ -45,7 +45,7 @@ _Проект служебных страниц на Astro для системы
 astro-privacy-terms/
 ├── src/
 │   ├── pages/
-│   │   ├── terms.astro
+│   │   ├── terms-of-usage.astro
 │   │   └── privacy-policy.astro
 ├── package.json
 ├── package-lock.json
