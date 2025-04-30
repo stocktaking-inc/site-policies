@@ -42,10 +42,10 @@ _Проект служебных страниц на Astro для системы
 ## 📂 Структура проекта
 
 ```pqsql
-astro-privacy-terms/
+site-poliecies/
 ├── src/
 │   ├── pages/
-│   │   ├── terms.astro
+│   │   ├── terms-of-usage.astro
 │   │   └── privacy-policy.astro
 ├── package.json
 ├── package-lock.json
