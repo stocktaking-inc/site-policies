@@ -6,8 +6,10 @@ _Проект на Astro, реализующий обязательные юри
 ## 📚 Описание проекта
 
 Данный проект представляет собой отдельный модуль клиентской части системы, в котором реализованы следующие страницы:
+- [General page about of site-policy](https://site-policies.vercel.app)
 - [Terms of Usage](https://site-policies.vercel.app/terms-of-usage)
 - [Privacy Policy](https://site-policies.vercel.app/privacy-policy)
+- [Public Offer](https://site-policies.vercel.app/offer)
 
 Проект создан с использованием [Astro](https://astro.build/), современного фреймворка для быстрого создания веб-сайтов.
 
@@ -28,8 +30,8 @@ _Проект на Astro, реализующий обязательные юри
 
 1. Клонировать репозиторий:
    ```bash
-   git clone https://github.com/your-username/astro-privacy-terms.git
-   cd astro-privacy-terms
+   git clone https://github.com/your-username/site-policies.git
+   cd astro-site-policies
 
 2. Установить зависимости:
    ```bash
@@ -46,15 +48,24 @@ _Проект на Astro, реализующий обязательные юри
 ```pqsql
 site-policies/    
 ├── public/
+│   ├── images/
+│   │   └── icon_v.1.png
+│   │   └── logo_v.1.png
 │   ├── robots.txt             
 ├── src/
 │   ├── styles/
-│   │   ├── styles.css
+│   │   ├── font.css
+│   │   ├── layout.css
+│   │   ├── misc.css
+│   │   ├── navigation.css
+│   │   └── sidebar.css
 │   ├── utils/
 │   │   ├── copyright.ts
 │   ├── pages/
-│   │   ├── privacy-policy.astro
-│   │   └── terms-of-usage.astro         
+│   │   ├── index.astro
+│   │   ├── offer.astro
+│   │   ├── policy.astro
+│   │   └── terms.astro         
 ├── astro.config.mjs
 ├── package.json
 ├── package-lock.json
@@ -66,11 +77,12 @@ site-policies/
 
 ## 🌐 Навигация по сайту
 ```
-/terms-of-usage — Условия использования 
-/privacy-policy — Политика конфиденциальности 
+/terms — Условия использования 
+/policy — Политика конфиденциальности 
+/offer - Публичная оферта
 ```
 ## 🔍 SEO и индексация
-**Sitemap:** Генерируется автоматически с помощью плагина ```@astrojs/sitemap```. После сборки (```npm run build```) создаются файлы ```sitemap-index.xml``` и ```sitemap-0.xml``` в папке ```dist/```. Они содержат ссылки на страницы ```/```, ```/terms-of-usage```, ```/privacy-policy```. Доступны по адресам:
+**Sitemap:** Генерируется автоматически с помощью плагина ```@astrojs/sitemap```. После сборки (```npm run build```) создаются файлы ```sitemap-index.xml``` и ```sitemap-0.xml``` в папке ```dist/```. Они содержат ссылки на страницы ```/```,```/offer```, ```/terms```, ```/policy```. Доступны по адресам:
 - [sitemap-index.xml](https://site-policies.vercel.app/sitemap-index.xml)
 - [sitemap-0.xml](https://site-policies.vercel.app/sitemap-0.xml)
 
