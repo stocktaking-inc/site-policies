@@ -1,12 +1,18 @@
 ---
-import './styles/styles.css'; 
+import { getCopyright } from './utils/copyright.ts';
+import './styles/font.css'; 
+import './styles/layout.css'; 
+import './styles/misc.css'; 
+import './styles/navigation.css'; 
+import './styles/sidebar.css'; 
 ---
 
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная страница</title>
+    <title>General </title>
+    <link rel="icon" type="image/png" href="/images/icon_v.1.png" />
   </head>
   <body>
     <main>
@@ -14,16 +20,17 @@ import './styles/styles.css';
         <h1>Добро пожаловать на наш сайт</h1>
       </header>
       <section>
-        <p>Это главная страница сайта. Здесь вы можете найти информацию о наших условиях и политике конфиденциальности.</p>
+        <p>Это главная страница Stocktaking inc. Здесь вы можете найти информацию о наших условиях и политике конфиденциальности.</p>
         <nav>
           <ul>
             <li><a href="/terms">Условия использования</a></li>
             <li><a href="/policy">Политика конфиденциальности</a></li>
+            <li><a href="/offer">Публичная оферта</a></li>
           </ul>
         </nav>
       </section>
       <footer>
-        <p>&copy; 2025 SmartTally</p>
+        <p>{getCopyright()}</p>
       </footer>
     </main>
   </body>

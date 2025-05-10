@@ -1,0 +1,28 @@
+.last-update {
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    color: #555;
+    font-size: .95rem;
+    margin-bottom: 1.5em;
+  }
+  
+  a {
+    color: #FEFEFE;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #E6E3DE;
+    text-decoration: underline;
+  }
+  
+  address {
+    font-style: normal;
+    margin: 15px 0;
+    color: #E6E3DE;
+  }
+  
+  address a {
+    margin-right: 10px;
+    color: #FEFEFE;
+  }
