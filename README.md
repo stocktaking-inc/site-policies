@@ -57,23 +57,28 @@
 ```pqsql
 site-policies/
 ├── public/
-│   ├── images/
-│   │   └── icon_v.1.png
-│   │   └── logo_v.1.png
 │   ├── robots.txt
 ├── src/
-│   ├── styles/
-│   │   ├── font.css
-│   │   ├── layout.css
-│   │   ├── misc.css
-│   │   ├── navigation.css
-│   │   └── sidebar.css
-│   ├── utils/
-│   │   ├── copyright.ts
+│   ├── assets/
+│   │   ├── icons/
+│   │   ├── images/
+│   │   │   │   ├── icon.png
+│   │   │   │   ├── logo.png
+│   │   │   │   └── opengraph.png
 │   ├── pages/
 │   │   ├── offer.astro
 │   │   ├── policy.astro
 │   │   └── terms.astro
+│   ├── components/
+│   │   ├── Footer.astro
+├── styles/
+│   ├── font.css
+│   ├── layout.css
+│   ├── misc.css
+│   ├── navigation.css
+│   └── sidebar.css
+├── utils/
+│   ├── copyright.ts
 ├── .prettierrc.js
 ├── .prettierignore
 ├── eslint.config.js
@@ -82,6 +87,7 @@ site-policies/
 ├── package.json
 ├── package-lock.json
 ├── tsconfig.json
+├── yarn.lock
 └── README.md
 ```
 
