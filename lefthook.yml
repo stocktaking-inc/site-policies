@@ -4,11 +4,11 @@ pre-commit:
     linting:
       run: npm run lint
       stage_fixed: true # Автоматически добавляет исправленные файлы в индекс
-      glob: "*.{ts,astro}" # Проверяет только файлы с указанными расширениями
+      glob: '*.{ts,astro}' # Проверяет только файлы с указанными расширениями
     formatting:
       run: npm run format
       stage_fixed: true # Автоматически добавляет отформатированные файлы в индекс
-      glob: "*.{ts,astro,css,md}" # Форматирует файлы с указанными расширениями
+      glob: '*.{ts,astro,css,md}' # Форматирует файлы с указанными расширениями
 
 pre-push:
   commands:

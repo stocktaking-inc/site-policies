@@ -21,10 +21,10 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - HTML / Astro-компоненты
 - Markdown
-- [Prettier](https://prettier.io/) 
-- [ESLint](https://eslint.org/) 
-- [Lefthook](https://github.com/evilmartians/lefthook) 
-- [Commitizen](https://github.com/commitizen/cz-cli) 
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/)
+- [Lefthook](https://github.com/evilmartians/lefthook)
+- [Commitizen](https://github.com/commitizen/cz-cli)
 - @astrojs/sitemap
 - @astrojs/sitemap
 
@@ -77,9 +77,9 @@ site-policies/
 │   │   ├── offer.astro
 │   │   ├── policy.astro
 │   │   └── terms.astro
-├── .prettierrc.js          
-├── .prettierignore         
-├── eslint.config.js        
+├── .prettierrc.js
+├── .prettierignore
+├── eslint.config.js
 ├── lefthook.yml
 ├── astro.config.mjs
 ├── package.json
@@ -109,10 +109,11 @@ site-policies/
 
 - [robots.txt](https://site-policies.vercel.app/robots.txt)
 
-## 🛠 Процесс разработки 
-- *Коммиты:* Используйте `npm run commit` с Commitizen для создания структурированных сообщений в формате Conventional Commits.
-- *Линтинг и форматирование:* Перед коммитом автоматически выполняются `npm run lint` (ESLint) и `npm run format` (Prettier) с помощью Lefthook.
-- *Добавление изменений:* Убедитесь, что все новые файлы добавлены в индекс Git перед коммитом (`git add .`).
+## 🛠 Процесс разработки
+
+- _Коммиты:_ Используйте `npm run commit` с Commitizen для создания структурированных сообщений в формате Conventional Commits.
+- _Линтинг и форматирование:_ Перед коммитом автоматически выполняются `npm run lint` (ESLint) и `npm run format` (Prettier) с помощью Lefthook.
+- _Добавление изменений:_ Убедитесь, что все новые файлы добавлены в индекс Git перед коммитом (`git add .`).
 
 ## 📬 Контакты
 
