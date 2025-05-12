@@ -28,7 +28,7 @@ nav[aria-label="Оглавление"] {
     content: '';
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%);
     width: 8px;
     height: 8px;
     background: #A39686;
