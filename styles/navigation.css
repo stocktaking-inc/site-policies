@@ -23,8 +23,8 @@ nav[aria-label='Оглавление']::after {
   bottom: -10px;
 }
 
-nav[aria-label='Оглавление'].decorator::before::after,
-nav[aria-label='Оглавление'].decorator::after::after {
+nav[aria-label='Оглавление'].decorator::before,
+nav[aria-label='Оглавление'].decorator::after {
   content: '';
   position: absolute;
   left: 50%;
