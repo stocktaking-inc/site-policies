@@ -78,7 +78,7 @@ site-policies/
 │   ├── navigation.css
 │   └── sidebar.css
 ├── utils/
-│   ├── copyright.ts
+│   └── copyright.ts
 ├── .prettierrc.js
 ├── .prettierignore
 ├── eslint.config.js
