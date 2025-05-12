@@ -10,7 +10,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint . --ext .ts,.astro",
-    "lint:fix": "eslint . --ext .ts,.astro --fix"
+    "lint:fix": "eslint . --ext .ts,.astro --fix",
+    "commit": "cz"
   },
   "config": {
     "commitizen": {
