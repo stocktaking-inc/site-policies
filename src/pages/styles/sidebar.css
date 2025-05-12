@@ -1,22 +1,22 @@
 aside {
-    width: 200px;
-    background: #89806F;
-    color: #E6E3DE;
-    padding: 15px;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    border: 1px solid #A39686;
-    border-radius: 4px;
+  width: 200px;
+  background: #89806f;
+  color: #e6e3de;
+  padding: 15px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  border: 1px solid #a39686;
+  border-radius: 4px;
+}
+
+aside p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  aside {
+    display: none;
   }
-  
-  aside p {
-    margin: 5px 0;
-    font-size: .9em;
-  }
-  
-  @media (max-width: 600px) {
-    aside {
-      display: none;
-    }
-  }
+}

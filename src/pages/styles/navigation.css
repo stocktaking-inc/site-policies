@@ -1,107 +1,107 @@
-nav[aria-label="Оглавление"] {
-    margin-bottom: 10px;
-    padding: 10px;
-    position: relative;
+nav[aria-label='Оглавление'] {
+  margin-bottom: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+nav[aria-label='Оглавление']::before,
+nav[aria-label='Оглавление']::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #e6e3de;
+  position: absolute;
+  left: 0;
+}
+
+nav[aria-label='Оглавление']::before {
+  top: -10px;
+}
+
+nav[aria-label='Оглавление']::after {
+  bottom: -10px;
+}
+
+nav[aria-label='Оглавление'].decorator::before::after,
+nav[aria-label='Оглавление'].decorator::after::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #a39686;
+  border: 1px solid #e6e3de;
+}
+
+nav[aria-label='Оглавление'].decorator::before::after {
+  top: -14px;
+}
+
+nav[aria-label='Оглавление'].decorator::after::after {
+  bottom: -14px;
+}
+
+nav[aria-label='Оглавление'] ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav[aria-label='Оглавление'] li {
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+nav[aria-label='Оглавление'] li:hover {
+  transform: translateX(5px);
+  background: rgba(163, 150, 134, 0.2);
+  border-radius: 4px;
+}
+
+nav[aria-label='Оглавление'] a {
+  color: #e6e3de;
+  text-decoration: none;
+  font-size: 0.95em;
+  padding: 6px 10px;
+  display: block;
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, #a39686, #e6e3de);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav[aria-label='Оглавление'] a:hover {
+  background: linear-gradient(90deg, #fefefe, #e6e3de);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+}
+
+nav[aria-label='Оглавление'] a::before {
+  content: '› ';
+  color: #cdcac3;
+  margin-right: 5px;
+  -webkit-text-fill-color: #cdcac3;
+}
+
+@media (max-width: 600px) {
+  nav[aria-label='Оглавление'] {
+    padding: 8px;
   }
-  
-  nav[aria-label="Оглавление"]::before,
-  nav[aria-label="Оглавление"]::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: #E6E3DE;
-    position: absolute;
-    left: 0;
+
+  nav[aria-label='Оглавление'] a {
+    font-size: 0.9em;
+    padding: 4px 8px;
   }
-  
-  nav[aria-label="Оглавление"]::before {
-    top: -10px;
+
+  nav[aria-label='Оглавление'] li:hover {
+    transform: translateX(3px);
   }
-  
-  nav[aria-label="Оглавление"]::after {
-    bottom: -10px;
+
+  nav[aria-label='Оглавление'].decorator::before::after,
+  nav[aria-label='Оглавление'].decorator::after::after {
+    width: 6px;
+    height: 6px;
   }
-  
-  nav[aria-label="Оглавление"].decorator::before::after,
-  nav[aria-label="Оглавление"].decorator::after::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 8px;
-    height: 8px;
-    background: #A39686;
-    border: 1px solid #E6E3DE;
-  }
-  
-  nav[aria-label="Оглавление"].decorator::before::after {
-    top: -14px;
-  }
-  
-  nav[aria-label="Оглавление"].decorator::after::after {
-    bottom: -14px;
-  }
-  
-  nav[aria-label="Оглавление"] ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav[aria-label="Оглавление"] li {
-    margin: 5px 0;
-    transition: all .3s ease;
-  }
-  
-  nav[aria-label="Оглавление"] li:hover {
-    transform: translateX(5px);
-    background: rgba(163, 150, 134, .2);
-    border-radius: 4px;
-  }
-  
-  nav[aria-label="Оглавление"] a {
-    color: #E6E3DE;
-    text-decoration: none;
-    font-size: .95em;
-    padding: 6px 10px;
-    display: block;
-    transition: all .3s ease;
-    background: linear-gradient(90deg, #A39686, #E6E3DE);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  nav[aria-label="Оглавление"] a:hover {
-    background: linear-gradient(90deg, #FEFEFE, #E6E3DE);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: underline;
-  }
-  
-  nav[aria-label="Оглавление"] a::before {
-    content: "› ";
-    color: #CDCAC3;
-    margin-right: 5px;
-    -webkit-text-fill-color: #CDCAC3;
-  }
-  
-  @media (max-width: 600px) {
-    nav[aria-label="Оглавление"] {
-      padding: 8px;
-    }
-  
-    nav[aria-label="Оглавление"] a {
-      font-size: .9em;
-      padding: 4px 8px;
-    }
-  
-    nav[aria-label="Оглавление"] li:hover {
-      transform: translateX(3px);
-    }
-  
-    nav[aria-label="Оглавление"].decorator::before::after,
-    nav[aria-label="Оглавление"].decorator::after::after {
-      width: 6px;
-      height: 6px;
-    }
-  }
+}

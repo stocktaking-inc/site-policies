@@ -1,0 +1,26 @@
+pre-commit:
+  parallel: true
+  commands:
+    linting:
+      run: npm run lint
+      stage_fixed: true # Автоматически добавляет исправленные файлы в индекс
+      glob: "*.{ts,astro}" # Проверяет только файлы с указанными расширениями
+    formatting:
+      run: npm run format
+      stage_fixed: true # Автоматически добавляет отформатированные файлы в индекс
+      glob: "*.{ts,astro,css,md}" # Форматирует файлы с указанными расширениями
+
+pre-push:
+  commands:
+    changelog:
+      run: |
+        echo "Добавление CHANGELOG.md..."
+        git add CHANGELOG.md
+        if git diff --cached --quiet; then
+          echo "Нет изменений для коммита."
+        else
+          echo "Создание коммита..."
+          git commit -m "chore(release): обновлен changelog"
+        fi
+        echo "Отправка изменений..."
+        git push --no-verify
