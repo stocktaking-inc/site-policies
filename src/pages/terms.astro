@@ -1,5 +1,6 @@
 ---
-import { getCopyright } from './utils/copyright.ts';
+import { getCopyright } from '@/utils/copyright';
+import Footer from '@/src/components/Footer.astro';
 import './styles/font.css'; 
 import './styles/layout.css'; 
 import './styles/misc.css'; 
@@ -118,9 +119,7 @@ const tel_num = "8-800-555-35-55"
       </article>
     </main>
     
-    <footer>
-      <p>{getCopyright()}</p>
-    </footer>
+    <Footer />
   
   </body>
 </html>

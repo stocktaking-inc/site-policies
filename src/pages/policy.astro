@@ -1,5 +1,6 @@
 ---
-import { getCopyright } from './utils/copyright.ts';
+import { getCopyright } from '@/utils/copyright';
+import Footer from '@/src/components/Footer.astro';
 import './styles/font.css'; 
 import './styles/layout.css'; 
 import './styles/misc.css'; 
@@ -164,10 +165,9 @@ const tel_num = "8-800-555-35-55"
           <p>Мы можем обновлять Политику при изменениях законодательства или процессов. Актуальная версия всегда доступна на Сайте.</p>
         </section>
       </article>
+      
+      <Footer />
 
-      <footer>
-        <p>{getCopyright()}</p>
-      </footer>
     </main>
   </body>
 </html>
