@@ -21,7 +21,11 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - HTML / Astro-компоненты
 - Markdown
-- Prettier
+- [Prettier](https://prettier.io/) 
+- [ESLint](https://eslint.org/) 
+- [Lefthook](https://github.com/evilmartians/lefthook) 
+- [Commitizen](https://github.com/commitizen/cz-cli) 
+- @astrojs/sitemap
 - @astrojs/sitemap
 
 ---
@@ -73,6 +77,10 @@ site-policies/
 │   │   ├── offer.astro
 │   │   ├── policy.astro
 │   │   └── terms.astro
+├── .prettierrc.js          
+├── .prettierignore         
+├── eslint.config.js        
+├── lefthook.yml
 ├── astro.config.mjs
 ├── package.json
 ├── package-lock.json
@@ -100,6 +108,11 @@ site-policies/
 **Robots.txt:** Находится в `public/robots.txt`. Указывает поисковым системам, какие страницы индексировать, и содержит ссылку на `sitemap-index.xml`. Доступен по адресу:
 
 - [robots.txt](https://site-policies.vercel.app/robots.txt)
+
+## 🛠 Процесс разработки 
+- *Коммиты:* Используйте `npm run commit` с Commitizen для создания структурированных сообщений в формате Conventional Commits.
+- *Линтинг и форматирование:* Перед коммитом автоматически выполняются `npm run lint` (ESLint) и `npm run format` (Prettier) с помощью Lefthook.
+- *Добавление изменений:* Убедитесь, что все новые файлы добавлены в индекс Git перед коммитом (`git add .`).
 
 ## 📬 Контакты
 
