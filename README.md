@@ -6,7 +6,6 @@
 
 Данный проект представляет собой отдельный модуль клиентской части системы, в котором реализованы следующие страницы:
 
-- [General page about of site-policy](https://site-policies.vercel.app)
 - [Terms of Usage](https://site-policies.vercel.app/terms-of-usage)
 - [Privacy Policy](https://site-policies.vercel.app/privacy-policy)
 - [Public Offer](https://site-policies.vercel.app/offer)
@@ -72,7 +71,6 @@ site-policies/
 │   ├── utils/
 │   │   ├── copyright.ts
 │   ├── pages/
-│   │   ├── index.astro
 │   │   ├── offer.astro
 │   │   ├── policy.astro
 │   │   └── terms.astro
