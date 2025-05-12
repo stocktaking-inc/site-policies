@@ -26,7 +26,6 @@
 - [Lefthook](https://github.com/evilmartians/lefthook)
 - [Commitizen](https://github.com/commitizen/cz-cli)
 - @astrojs/sitemap
-- @astrojs/sitemap
 
 ---
 
