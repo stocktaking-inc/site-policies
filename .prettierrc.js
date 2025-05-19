@@ -10,5 +10,14 @@ export default {
   endOfLine: 'lf',
   arrowParens: 'avoid',
   quoteProps: 'consistent',
-  singleAttributePerLine: true
+  singleAttributePerLine: true,
+  "plugins": ["prettier-plugin-astro"],
+  "overrides": [
+    {
+      "files": "*.astro",
+      "options": {
+        "parser": "astro",
+      }
+    }
+  ]
 }
