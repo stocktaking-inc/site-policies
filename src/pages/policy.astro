@@ -1,24 +1,31 @@
 ---
-import Footer from '../components/Footer.astro';
-import '@/styles/font.css'; 
-import '@/styles/layout.css'; 
-import '@/styles/misc.css'; 
-import '@/styles/navigation.css'; 
-import '@/styles/sidebar.css'; 
+import Footer from '../components/Footer.astro'
+import '@/styles/font.css'
+import '@/styles/layout.css'
+import '@/styles/misc.css'
+import '@/styles/navigation.css'
+import '@/styles/sidebar.css'
 
-const operator = "SmartTally"
-const msrn = "xxxxxxxxxxxxxxx"
-const tin = "xxxxxxxxxxxx"
-const email = "Jlwxd@mail.ru"
-const tel_num = "8-800-555-35-55"
+const operator = 'SmartTally'
+const msrn = 'xxxxxxxxxxxxxxx'
+const tin = 'xxxxxxxxxxxx'
+const email = 'Jlwxd@mail.ru'
+const tel_num = '8-800-555-35-55'
 ---
 
-<html lang="ru">
+<html lang='ru'>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8' />
+    <meta
+      name='viewport'
+      content='width=device-width, initial-scale=1.0'
+    />
     <title>Privacy policy</title>
-    <link rel="icon" type="image/png" href="@/assets/images/icon.png" />
+    <link
+      rel='icon'
+      type='image/png'
+      href='@/assets/images/icon.png'
+    />
   </head>
   <body>
     <main>
@@ -26,48 +33,132 @@ const tel_num = "8-800-555-35-55"
         <h1>Политика конфиденциальности</h1>
       </header>
       <article>
-        <div class="last-update">Last Update: May 10, 2025</div>
+        <div class='last-update'>Last Update: May 10, 2025</div>
         <selection>
           <p>Welcome to Stocktaking inc.</p>
         </selection>
       </article>
-      <nav aria-label="Оглавление">
+      <nav aria-label='Оглавление'>
         <ul>
-          <li><a href="#operator" tabindex="0">1. Оператор персональных данных</a></li>
-          <li><a href="#definitions" tabindex="0">2. Определения</a></li>
-          <li><a href="#categories" tabindex="0">3. Категории собираемых данных</a></li>
-          <li><a href="#purposes" tabindex="0">4. Цели обработки</a></li>
-          <li><a href="#legal" tabindex="0">5. Правовые основания</a></li>
-          <li><a href="#sharing" tabindex="0">6. Передача данных</a></li>
-          <li><a href="#crossborder" tabindex="0">7. Трансграничная передача</a></li>
-          <li><a href="#cookies" tabindex="0">8. Cookies и аналитика</a></li>
-          <li><a href="#security" tabindex="0">9. Безопасность</a></li>
-          <li><a href="#rights" tabindex="0">10. Права субъектов</a></li>
-          <li><a href="#retention" tabindex="0">11. Сроки хранения</a></li>
-          <li><a href="#roskomnadzor" tabindex="0">12. Уведомление Роскомнадзора</a></li>
-          <li><a href="#changes" tabindex="0">13. Изменения в политике</a></li>
+          <li>
+            <a
+              href='#operator'
+              tabindex='0'
+              >1. Оператор персональных данных</a>
+          </li>
+          <li>
+            <a
+              href='#definitions'
+              tabindex='0'
+              >2. Определения</a>
+          </li>
+          <li>
+            <a
+              href='#categories'
+              tabindex='0'
+              >3. Категории собираемых данных</a>
+          </li>
+          <li>
+            <a
+              href='#purposes'
+              tabindex='0'
+              >4. Цели обработки</a>
+          </li>
+          <li>
+            <a
+              href='#legal'
+              tabindex='0'
+              >5. Правовые основания</a>
+          </li>
+          <li>
+            <a
+              href='#sharing'
+              tabindex='0'
+              >6. Передача данных</a>
+          </li>
+          <li>
+            <a
+              href='#crossborder'
+              tabindex='0'
+              >7. Трансграничная передача</a>
+          </li>
+          <li>
+            <a
+              href='#cookies'
+              tabindex='0'
+              >8. Cookies и аналитика</a>
+          </li>
+          <li>
+            <a
+              href='#security'
+              tabindex='0'
+              >9. Безопасность</a>
+          </li>
+          <li>
+            <a
+              href='#rights'
+              tabindex='0'
+              >10. Права субъектов</a>
+          </li>
+          <li>
+            <a
+              href='#retention'
+              tabindex='0'
+              >11. Сроки хранения</a>
+          </li>
+          <li>
+            <a
+              href='#roskomnadzor'
+              tabindex='0'
+              >12. Уведомление Роскомнадзора</a>
+          </li>
+          <li>
+            <a
+              href='#changes'
+              tabindex='0'
+              >13. Изменения в политике</a>
+          </li>
         </ul>
       </nav>
       <article>
-        <section id="operator" role="region" aria-labelledby="operator-heading">
-          <h2 id="operator-heading">1. Оператор персональных данных</h2>
+        <section
+          id='operator'
+          role='region'
+          aria-labelledby='operator-heading'
+        >
+          <h2 id='operator-heading'>1. Оператор персональных данных</h2>
           <p>Оператор: <strong>{operator}</strong></p>
           <p>ОГРН: <strong>{msrn}</strong>, ИНН: <strong>{tin}</strong></p>
           <address>
-            Контакт: <a href="mailto:Jlwxd@mail.ru" tabindex="0">{email}</a>, 
-            тел: <a href="tel:8-800-555 35 55" tabindex="0">{tel_num}</a>
+            Контакт: <a
+              href='mailto:Jlwxd@mail.ru'
+              tabindex='0'
+              >{email}</a
+            >, тел: <a
+              href='tel:8-800-555 35 55'
+              tabindex='0'
+              >{tel_num}</a
+            >
           </address>
         </section>
-        <section id="definitions" role="region" aria-labelledby="definitions-heading">
-          <h2 id="definitions-heading">2. Определения</h2>
+        <section
+          id='definitions'
+          role='region'
+          aria-labelledby='definitions-heading'
+        >
+          <h2 id='definitions-heading'>2. Определения</h2>
           <ul>
             <li><strong>Персональные данные</strong> — информация о физическом лице.</li>
             <li><strong>Обработка данных</strong> — любые действия с данными.</li>
             <li><strong>Оператор</strong> — лицо, осуществляющее обработку данных.</li>
           </ul>
         </section>
-        <section id="categories" role="region" aria-labelledby="categories-heading">
-          <h2 id="categories-heading">3. Категории собираемых данных</h2>
+        <section
+          id='categories'
+          role='region'
+          aria-labelledby='categories-heading'
+        >
+          <h2 id='categories-heading'>3. Категории собираемых данных</h2>
           <ul>
             <li>Контактные данные: имя, e-mail, телефон.</li>
             <li>Технические данные: IP, устройство, браузер, страницы.</li>
@@ -76,8 +167,12 @@ const tel_num = "8-800-555-35-55"
           </ul>
           <p>Данные несовершеннолетних не обрабатываются без согласия представителей.</p>
         </section>
-        <section id="purposes" role="region" aria-labelledby="purposes-heading">
-          <h2 id="purposes-heading">4. Цели обработки персональных данных</h2>
+        <section
+          id='purposes'
+          role='region'
+          aria-labelledby='purposes-heading'
+        >
+          <h2 id='purposes-heading'>4. Цели обработки персональных данных</h2>
           <ul>
             <li>Функционирование и безопасность сайта.</li>
             <li>Аналитика и улучшение сервиса.</li>
@@ -85,8 +180,12 @@ const tel_num = "8-800-555-35-55"
             <li>Соблюдение законодательства РФ.</li>
           </ul>
         </section>
-        <section id="legal" role="region" aria-labelledby="legal-heading">
-          <h2 id="legal-heading">5. Правовые основания обработки</h2>
+        <section
+          id='legal'
+          role='region'
+          aria-labelledby='legal-heading'
+        >
+          <h2 id='legal-heading'>5. Правовые основания обработки</h2>
           <ul>
             <li>Согласие субъекта данных при отправке форм или явном подтверждении.</li>
             <li>Исполнение договора с пользователем.</li>
@@ -94,8 +193,12 @@ const tel_num = "8-800-555-35-55"
             <li>Законные интересы Оператора: аналитика, безопасность, улучшение сервиса.</li>
           </ul>
         </section>
-        <section id="sharing" role="region" aria-labelledby="sharing-heading">
-          <h2 id="sharing-heading">6. Передача персональных данных</h2>
+        <section
+          id='sharing'
+          role='region'
+          aria-labelledby='sharing-heading'
+        >
+          <h2 id='sharing-heading'>6. Передача персональных данных</h2>
           <p>Мы не передаем данные третьим лицам, за исключением:</p>
           <ul>
             <li>Необходимости оказания услуг (хостинг, аналитика и др.).</li>
@@ -104,21 +207,45 @@ const tel_num = "8-800-555-35-55"
           </ul>
           <p>Во всех случаях обеспечивается защита данных договорными обязательствами.</p>
         </section>
-        <section id="crossborder" role="region" aria-labelledby="crossborder-heading">
-          <h2 id="crossborder-heading">7. Трансграничная передача данных</h2>
-          <p>Передача данных возможна только в страны, обеспечивающие надлежащий уровень защиты, согласно законодательству РФ.</p>
+        <section
+          id='crossborder'
+          role='region'
+          aria-labelledby='crossborder-heading'
+        >
+          <h2 id='crossborder-heading'>7. Трансграничная передача данных</h2>
+          <p>
+            Передача данных возможна только в страны, обеспечивающие надлежащий уровень защиты,
+            согласно законодательству РФ.
+          </p>
         </section>
-        <section id="cookies" role="region" aria-labelledby="cookies-heading">
-          <h2 id="cookies-heading">8. Cookies и аналитика</h2>
-          <p>Мы используем файлы cookies, устанавливаемые браузером, для обеспечения корректной работы сайта и анализа поведения пользователей.</p>
+        <section
+          id='cookies'
+          role='region'
+          aria-labelledby='cookies-heading'
+        >
+          <h2 id='cookies-heading'>8. Cookies и аналитика</h2>
+          <p>
+            Мы используем файлы cookies, устанавливаемые браузером, для обеспечения корректной
+            работы сайта и анализа поведения пользователей.
+          </p>
           <ul>
             <li><strong>Функциональные cookies</strong>: сохраняют пользовательские настройки.</li>
-            <li><strong>Аналитические cookies</strong>: собирают обезличенную информацию о взаимодействии с сайтом.</li>
+            <li>
+              <strong>Аналитические cookies</strong>: собирают обезличенную информацию о
+              взаимодействии с сайтом.
+            </li>
           </ul>
-          <p>Вы можете отключить cookies через настройки браузера. Отключение cookies может повлиять на функциональность сайта.</p>
+          <p>
+            Вы можете отключить cookies через настройки браузера. Отключение cookies может повлиять
+            на функциональность сайта.
+          </p>
         </section>
-        <section id="security" role="region" aria-labelledby="security-heading">
-          <h2 id="security-heading">9. Меры по обеспечению безопасности</h2>
+        <section
+          id='security'
+          role='region'
+          aria-labelledby='security-heading'
+        >
+          <h2 id='security-heading'>9. Меры по обеспечению безопасности</h2>
           <ul>
             <li>Шифрование данных (SSL/TLS).</li>
             <li>Ограничение доступа по ролям.</li>
@@ -126,27 +253,58 @@ const tel_num = "8-800-555-35-55"
             <li>Внутренний контроль и аудит.</li>
           </ul>
         </section>
-        <section id="rights" role="region" aria-labelledby="rights-heading">
-          <h2 id="rights-heading">10. Права субъекта персональных данных</h2>
+        <section
+          id='rights'
+          role='region'
+          aria-labelledby='rights-heading'
+        >
+          <h2 id='rights-heading'>10. Права субъекта персональных данных</h2>
           <ul>
             <li>Право на доступ к данным и информации об обработке.</li>
             <li>Право на корректировку, блокировку, удаление данных.</li>
             <li>Право на отзыв согласия.</li>
             <li>Право на обращение в Роскомнадзор.</li>
           </ul>
-          <p>Запросы направляйте по адресу: <a href="mailto:Jlwxd@mail.ru" tabindex="0">{email}</a>. Ответ в течение 30 дней.</p>
+          <p>
+            Запросы направляйте по адресу: <a
+              href='mailto:Jlwxd@mail.ru'
+              tabindex='0'
+              >{email}</a
+            >. Ответ в течение 30 дней.
+          </p>
         </section>
-        <section id="retention" role="region" aria-labelledby="retention-heading">
-          <h2 id="retention-heading">11. Сроки хранения данных</h2>
-          <p>Данные хранятся до достижения целей обработки или до отзыва согласия, если иное не предусмотрено законом.</p>
+        <section
+          id='retention'
+          role='region'
+          aria-labelledby='retention-heading'
+        >
+          <h2 id='retention-heading'>11. Сроки хранения данных</h2>
+          <p>
+            Данные хранятся до достижения целей обработки или до отзыва согласия, если иное не
+            предусмотрено законом.
+          </p>
         </section>
-        <section id="roskomnadzor" role="region" aria-labelledby="roskomnadzor-heading">
-          <h2 id="roskomnadzor-heading">12. Уведомление Роскомнадзора</h2>
-          <p>Оператор уведомил Роскомнадзор о намерении обработки персональных данных в соответствии со ст. 22 ФЗ №152-ФЗ.</p>
+        <section
+          id='roskomnadzor'
+          role='region'
+          aria-labelledby='roskomnadzor-heading'
+        >
+          <h2 id='roskomnadzor-heading'>12. Уведомление Роскомнадзора</h2>
+          <p>
+            Оператор уведомил Роскомнадзор о намерении обработки персональных данных в соответствии
+            со ст. 22 ФЗ №152-ФЗ.
+          </p>
         </section>
-        <section id="changes" role="region" aria-labelledby="changes-heading">
-          <h2 id="changes-heading">13. Изменения в политике</h2>
-          <p>Мы можем обновлять Политику при изменениях законодательства или процессов. Актуальная версия всегда доступна на Сайте.</p>
+        <section
+          id='changes'
+          role='region'
+          aria-labelledby='changes-heading'
+        >
+          <h2 id='changes-heading'>13. Изменения в политике</h2>
+          <p>
+            Мы можем обновлять Политику при изменениях законодательства или процессов. Актуальная
+            версия всегда доступна на Сайте.
+          </p>
         </section>
       </article>
       <Footer />

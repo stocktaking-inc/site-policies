@@ -11,12 +11,12 @@ export default {
   arrowParens: 'avoid',
   quoteProps: 'consistent',
   singleAttributePerLine: true,
-  "plugins": ["prettier-plugin-astro"],
-  "overrides": [
+  plugins: ['prettier-plugin-astro'],
+  overrides: [
     {
-      "files": "*.astro",
-      "options": {
-        "parser": "astro",
+      files: '*.astro',
+      options: {
+        parser: 'astro'
       }
     }
   ]

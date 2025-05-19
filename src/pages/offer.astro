@@ -1,24 +1,31 @@
 ---
-import Footer from '../components/Footer.astro';
-import '@/styles/font.css'; 
-import '@/styles/layout.css'; 
-import '@/styles/misc.css'; 
-import '@/styles/navigation.css'; 
-import '@/styles/sidebar.css'; 
+import Footer from '../components/Footer.astro'
+import '@/styles/font.css'
+import '@/styles/layout.css'
+import '@/styles/misc.css'
+import '@/styles/navigation.css'
+import '@/styles/sidebar.css'
 
-const operator = "SmartTally";
-const msrn = "xxxxxxxxxxxxxxx";
-const tin = "xxxxxxxxxxxx";
-const email = "Jlwxd@mail.ru";
-const tel_num = "8-800-555-35-55";
+const operator = 'SmartTally'
+const msrn = 'xxxxxxxxxxxxxxx'
+const tin = 'xxxxxxxxxxxx'
+const email = 'Jlwxd@mail.ru'
+const tel_num = '8-800-555-35-55'
 ---
 
-<html lang="ru">
+<html lang='ru'>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8' />
+    <meta
+      name='viewport'
+      content='width=device-width, initial-scale=1.0'
+    />
     <title>Публичная оферта</title>
-    <link rel="icon" type="image/png" href="/src/assets/images/icon.png" />
+    <link
+      rel='icon'
+      type='image/png'
+      href='/src/assets/images/icon.png'
+    />
   </head>
   <body>
     <main>
@@ -26,47 +33,124 @@ const tel_num = "8-800-555-35-55";
         <h1>Публичная оферта</h1>
       </header>
       <article>
-        <div class="last-update">Last Update: May 10, 2025</div>
+        <div class='last-update'>Last Update: May 10, 2025</div>
         <section>
           <p>Welcome to Stocktaking inc.</p>
-          <p>Настоящая публичная оферта регулирует порядок предоставления услуг сервиса «SmartTally».</p>
+          <p>
+            Настоящая публичная оферта регулирует порядок предоставления услуг сервиса «SmartTally».
+          </p>
         </section>
       </article>
-      <nav aria-label="Оглавление">
+      <nav aria-label='Оглавление'>
         <ul>
-          <li><a href="#general" tabindex="0">1. Общие положения</a></li>
-          <li><a href="#subject" tabindex="0">2. Предмет договора</a></li>
-          <li><a href="#acceptance" tabindex="0">3. Порядок заключения договора</a></li>
-          <li><a href="#responsibilities" tabindex="0">4. Права и обязанности сторон</a></li>
-          <li><a href="#payment" tabindex="0">5. Стоимость услуг и порядок оплаты</a></li>
-          <li><a href="#liability" tabindex="0">6. Ответственность сторон</a></li>
-          <li><a href="#termination" tabindex="0">7. Срок действия и расторжение договора</a></li>
-          <li><a href="#final" tabindex="0">8. Заключительные положения</a></li>
+          <li>
+            <a
+              href='#general'
+              tabindex='0'
+              >1. Общие положения</a>
+          </li>
+          <li>
+            <a
+              href='#subject'
+              tabindex='0'
+              >2. Предмет договора</a>
+          </li>
+          <li>
+            <a
+              href='#acceptance'
+              tabindex='0'
+              >3. Порядок заключения договора</a>
+          </li>
+          <li>
+            <a
+              href='#responsibilities'
+              tabindex='0'
+              >4. Права и обязанности сторон</a>
+          </li>
+          <li>
+            <a
+              href='#payment'
+              tabindex='0'
+              >5. Стоимость услуг и порядок оплаты</a>
+          </li>
+          <li>
+            <a
+              href='#liability'
+              tabindex='0'
+              >6. Ответственность сторон</a>
+          </li>
+          <li>
+            <a
+              href='#termination'
+              tabindex='0'
+              >7. Срок действия и расторжение договора</a>
+          </li>
+          <li>
+            <a
+              href='#final'
+              tabindex='0'
+              >8. Заключительные положения</a>
+          </li>
         </ul>
       </nav>
       <article>
-        <section id="general" role="region" aria-labelledby="general-heading">
-          <h2 id="general-heading">1. Общие положения</h2>
-          <p>Настоящая публичная оферта (далее — Оферта) является официальным предложением оператора «SmartTally» к заключению договора на оказание услуг по использованию системы инвентаризации логистических и торговых микро-предприятий.</p>
+        <section
+          id='general'
+          role='region'
+          aria-labelledby='general-heading'
+        >
+          <h2 id='general-heading'>1. Общие положения</h2>
+          <p>
+            Настоящая публичная оферта (далее — Оферта) является официальным предложением оператора
+            «SmartTally» к заключению договора на оказание услуг по использованию системы
+            инвентаризации логистических и торговых микро-предприятий.
+          </p>
           <address>
             <p>Оператор: <strong>{operator}</strong></p>
             <p>ОГРН: <strong>{msrn}</strong>, ИНН: <strong>{tin}</strong></p>
             <address>
-              Контакт: <a href="mailto:Jlwxd@mail.ru" tabindex="0">{email}</a>, 
-              тел: <a href="tel:8-800-555-35-55" tabindex="0">{tel_num}</a>
+              Контакт: <a
+                href='mailto:Jlwxd@mail.ru'
+                tabindex='0'
+                >{email}</a
+              >, тел: <a
+                href='tel:8-800-555-35-55'
+                tabindex='0'
+                >{tel_num}</a
+              >
             </address>
           </address>
         </section>
-        <section id="subject" role="region" aria-labelledby="subject-heading">
-          <h2 id="subject-heading">2. Предмет договора</h2>
-          <p>Оператор предоставляет Пользователю доступ к сервису «SmartTally» для автоматизации процессов инвентаризации, управления складом и учёта товаров. Услуги предоставляются через веб-интерфейс.</p>
+        <section
+          id='subject'
+          role='region'
+          aria-labelledby='subject-heading'
+        >
+          <h2 id='subject-heading'>2. Предмет договора</h2>
+          <p>
+            Оператор предоставляет Пользователю доступ к сервису «SmartTally» для автоматизации
+            процессов инвентаризации, управления складом и учёта товаров. Услуги предоставляются
+            через веб-интерфейс.
+          </p>
         </section>
-        <section id="acceptance" role="region" aria-labelledby="acceptance-heading">
-          <h2 id="acceptance-heading">3. Порядок заключения договора</h2>
-          <p>Договор считается заключённым с момента принятия условий Оферты Пользователем. Принятие условий осуществляется путём начала использования сервиса «SmartTally» (например, регистрация или вход в систему).</p>
+        <section
+          id='acceptance'
+          role='region'
+          aria-labelledby='acceptance-heading'
+        >
+          <h2 id='acceptance-heading'>3. Порядок заключения договора</h2>
+          <p>
+            Договор считается заключённым с момента принятия условий Оферты Пользователем. Принятие
+            условий осуществляется путём начала использования сервиса «SmartTally» (например,
+            регистрация или вход в систему).
+          </p>
         </section>
-        <section id="responsibilities" role="region" aria-labelledby="responsibilities-heading">
-          <h2 id="responsibilities-heading">4. Права и обязанности сторон</h2>
+        <section
+          id='responsibilities'
+          role='region'
+          aria-labelledby='responsibilities-heading'
+        >
+          <h2 id='responsibilities-heading'>4. Права и обязанности сторон</h2>
           <p>Оператор обязуется:</p>
           <ul>
             <li>Обеспечивать доступ к сервису в соответствии с условиями Оферты;</li>
@@ -80,25 +164,55 @@ const tel_num = "8-800-555-35-55";
             <li>Своевременно уведомлять Оператора о нарушениях или сбоях.</li>
           </ul>
         </section>
-        <section id="payment" role="region" aria-labelledby="payment-heading">
-          <h2 id="payment-heading">5. Стоимость услуг и порядок оплаты</h2>
-          <p>На текущий момент услуги сервиса «SmartTally» предоставляются бесплатно. Оператор оставляет за собой право ввести плату за дополнительные функции, уведомив Пользователя заранее.</p>
+        <section
+          id='payment'
+          role='region'
+          aria-labelledby='payment-heading'
+        >
+          <h2 id='payment-heading'>5. Стоимость услуг и порядок оплаты</h2>
+          <p>
+            На текущий момент услуги сервиса «SmartTally» предоставляются бесплатно. Оператор
+            оставляет за собой право ввести плату за дополнительные функции, уведомив Пользователя
+            заранее.
+          </p>
         </section>
-        <section id="liability" role="region" aria-labelledby="liability-heading">
-          <h2 id="liability-heading">6. Ответственность сторон</h2>
+        <section
+          id='liability'
+          role='region'
+          aria-labelledby='liability-heading'
+        >
+          <h2 id='liability-heading'>6. Ответственность сторон</h2>
           <ul>
             <li>Оператор не несёт ответственности за сбои, вызванные действиями третьих лиц;</li>
-            <li>Оператор не компенсирует убытки, связанные с некорректным использованием сервиса;</li>
+            <li>
+              Оператор не компенсирует убытки, связанные с некорректным использованием сервиса;
+            </li>
             <li>Пользователь несёт ответственность за сохранность своих учётных данных.</li>
           </ul>
         </section>
-        <section id="termination" role="region" aria-labelledby="termination-heading">
-          <h2 id="termination-heading">7. Срок действия и расторжение договора</h2>
-          <p>Оферта действует бессрочно до момента её отзыва Оператором. Пользователь может прекратить использование сервиса в любой момент, уведомив Оператора. Оператор вправе расторгнуть договор при нарушении Пользователем условий Оферты.</p>
+        <section
+          id='termination'
+          role='region'
+          aria-labelledby='termination-heading'
+        >
+          <h2 id='termination-heading'>7. Срок действия и расторжение договора</h2>
+          <p>
+            Оферта действует бессрочно до момента её отзыва Оператором. Пользователь может
+            прекратить использование сервиса в любой момент, уведомив Оператора. Оператор вправе
+            расторгнуть договор при нарушении Пользователем условий Оферты.
+          </p>
         </section>
-        <section id="final" role="region" aria-labelledby="final-heading">
-          <h2 id="final-heading">8. Заключительные положения</h2>
-          <p>Оператор оставляет за собой право изменять условия Оферты без предварительного уведомления. Актуальная версия Оферты публикуется на этой странице. Все споры решаются в соответствии с законодательством Российской Федерации.</p>
+        <section
+          id='final'
+          role='region'
+          aria-labelledby='final-heading'
+        >
+          <h2 id='final-heading'>8. Заключительные положения</h2>
+          <p>
+            Оператор оставляет за собой право изменять условия Оферты без предварительного
+            уведомления. Актуальная версия Оферты публикуется на этой странице. Все споры решаются в
+            соответствии с законодательством Российской Федерации.
+          </p>
         </section>
       </article>
       <Footer />
