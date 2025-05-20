@@ -11,20 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        cache: 'yarn'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
 
-    - name: Install Yarn
-      run: npm install -g yarn
+      - name: Install PNPM
+        run: npm install -g pnpm
 
-    - name: Install dependencies with Yarn
-      run: yarn install --frozen-lockfile
+      - name: Install dependencies with PNPM
+        run: pnpm install
 
-    - name: Build project
-      run: yarn build
+      - name: Build project
+        run: pnpm build
