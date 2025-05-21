@@ -42,19 +42,3 @@ ul li,
 ol li {
   margin: 10px 0;
 }
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  p,
-  ul li,
-  ol li {
-    font-size: 0.95em;
-  }
-}

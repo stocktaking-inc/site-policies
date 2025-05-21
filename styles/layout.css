@@ -28,15 +28,6 @@ section {
   margin-bottom: 30px;
 }
 
-footer {
-  text-align: center;
-  color: #e6e3de;
-  font-size: 0.9em;
-  padding: 20px 0;
-  border-top: 1px solid #a39686;
-  margin-top: 40px;
-}
-
 @media (max-width: 600px) {
   main {
     padding: 15px;
