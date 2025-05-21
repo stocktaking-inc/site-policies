@@ -12,8 +12,8 @@ importers:
         specifier: ^3.4.0
         version: 3.4.0
       astro:
-        specifier: ^5.7.13
-        version: 5.7.13(@types/node@22.15.21)(jiti@2.4.2)(rollup@4.41.0)(typescript@5.8.3)
+        specifier: ^5.7.14
+        version: 5.7.14(@types/node@22.15.21)(jiti@2.4.2)(rollup@4.41.0)(typescript@5.8.3)
     devDependencies:
       '@arkweid/lefthook':
         specifier: ^0.7.7
@@ -743,8 +743,8 @@ packages:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.7.13:
-    resolution: {integrity: sha512-cRGq2llKOhV3XMcYwQpfBIUcssN6HEK5CRbcMxAfd9OcFhvWE7KUy50zLioAZVVl3AqgUTJoNTlmZfD2eG0G1w==}
+  astro@5.7.14:
+    resolution: {integrity: sha512-DfuDD49f7mbHB7ygLm8KXEC6QQtpLoNrmoylcMLKdl1ahXNdiw+mgW8ApEMyHTUyVrqEUnr4gZCKSlZ9POCHjQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2369,8 +2369,8 @@ packages:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
-  yocto-spinner@0.2.2:
-    resolution: {integrity: sha512-21rPcM3e4vCpOXThiFRByX8amU5By1R0wNS8Oex+DP3YgC8xdU0vEJ/K8cbPLiIJVosSSysgcFof6s6MSD5/Vw==}
+  yocto-spinner@0.2.3:
+    resolution: {integrity: sha512-sqBChb33loEnkoXte1bLg45bEBsOP9N1kzQh5JZNKj/0rik4zAPTNSAVPj3uQAdc6slYJ0Ksc403G2XgxsJQFQ==}
     engines: {node: '>=18.19'}
 
   yoctocolors@2.1.1:
@@ -2387,6 +2387,9 @@ packages:
     peerDependencies:
       typescript: ^4.9.4 || ^5.0.2
       zod: ^3
+
+  zod@3.25.17:
+    resolution: {integrity: sha512-8hQzQ/kMOIFbwOgPrm9Sf9rtFHpFUMy4HvN0yEB0spw14aYi0uT5xG5CE2DB9cd51GWNsz+DNO7se1kztHMKnw==}
 
   zod@3.25.8:
     resolution: {integrity: sha512-iJPWX8HoZ2VE21VrhHGU9jVo/kVDUQyqM9vF0MxDhW/fp2sAl1eVwGJgiYZdHGiMwQJImXIW80lKk0MnfDxqiQ==}
@@ -3050,7 +3053,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.7.13(@types/node@22.15.21)(jiti@2.4.2)(rollup@4.41.0)(typescript@5.8.3):
+  astro@5.7.14(@types/node@22.15.21)(jiti@2.4.2)(rollup@4.41.0)(typescript@5.8.3):
     dependencies:
       '@astrojs/compiler': 2.12.0
       '@astrojs/internal-helpers': 0.6.1
@@ -3082,6 +3085,7 @@ snapshots:
       github-slugger: 2.0.0
       html-escaper: 3.0.3
       http-cache-semantics: 4.2.0
+      import-meta-resolve: 4.1.0
       js-yaml: 4.1.0
       kleur: 4.1.5
       magic-string: 0.30.17
@@ -3108,10 +3112,10 @@ snapshots:
       vitefu: 1.0.6(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
-      yocto-spinner: 0.2.2
-      zod: 3.25.8
-      zod-to-json-schema: 3.24.5(zod@3.25.8)
-      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.8)
+      yocto-spinner: 0.2.3
+      zod: 3.25.17
+      zod-to-json-schema: 3.24.5(zod@3.25.17)
+      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.17)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -5041,20 +5045,22 @@ snapshots:
 
   yocto-queue@1.2.1: {}
 
-  yocto-spinner@0.2.2:
+  yocto-spinner@0.2.3:
     dependencies:
       yoctocolors: 2.1.1
 
   yoctocolors@2.1.1: {}
 
-  zod-to-json-schema@3.24.5(zod@3.25.8):
+  zod-to-json-schema@3.24.5(zod@3.25.17):
     dependencies:
-      zod: 3.25.8
+      zod: 3.25.17
 
-  zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.8):
+  zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.17):
     dependencies:
       typescript: 5.8.3
-      zod: 3.25.8
+      zod: 3.25.17
+
+  zod@3.25.17: {}
 
   zod@3.25.8: {}
 
