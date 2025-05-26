@@ -1,0 +1,14 @@
+.git/
+.github/
+.idea/
+node_modules/
+
+.editorconfig
+.gitattributes
+.gitignore
+.prettierignore
+.prettierrc.js
+
+*.md
+eslint.config.js
+lefthook.yml
