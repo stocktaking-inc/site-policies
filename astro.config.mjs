@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config'
 import sitemap from '@astrojs/sitemap'
-import compressor from 'astro-compressor';
+import compressor from 'astro-compressor'
 
 export default defineConfig({
   site: 'https://site-policies.vercel.app',
@@ -14,6 +14,6 @@ export default defineConfig({
       lastmod: new Date(),
       filter: page => true
     }),
-    compressor(),
+    compressor()
   ]
 })
