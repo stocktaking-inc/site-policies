@@ -1,11 +1,12 @@
 ---
 import Footer from '../components/Footer/Footer.astro'
+import Navigation from '../components/Navigation/Navigation.astro'
 
 import '@/styles/reset.css'
-import '@/styles/font.css'
+import '../components/fonts/font.css'
 import '@/styles/layout.css'
 import '@/styles/misc.css'
-import '@/styles/navigation.css'
+import '../components/Navigation/Navigation.css'
 import '@/styles/sidebar.css'
 
 const operator = 'SmartTally'
@@ -13,6 +14,17 @@ const msrn = 'xxxxxxxxxxxxxxx'
 const tin = 'xxxxxxxxxxxx'
 const email = 'Jlwxd@mail.ru'
 const tel_num = '8-800-555-35-55'
+
+const navItems = [
+  { href: '#general', text: '1. Общие положения' },
+  { href: '#subject', text: '2. Предмет договора' },
+  { href: '#acceptance', text: '3. Порядок заключения договора' },
+  { href: '#responsibilities', text: '4. Права и обязанности сторон' },
+  { href: '#payment', text: '5. Стоимость услуг и порядок оплаты' },
+  { href: '#liability', text: '6. Ответственность сторон' },
+  { href: '#termination', text: '7. Срок действия и расторжение договора' },
+  { href: '#final', text: '8. Заключительные положения' }
+]
 ---
 
 <html lang='ru'>
@@ -63,66 +75,7 @@ const tel_num = '8-800-555-35-55'
           </p>
         </section>
       </article>
-      <nav aria-label='Оглавление'>
-        <ul>
-          <li>
-            <a
-              href='#general'
-              tabindex='0'
-              >1. Общие положения</a
-            >
-          </li>
-          <li>
-            <a
-              href='#subject'
-              tabindex='0'
-              >2. Предмет договора</a
-            >
-          </li>
-          <li>
-            <a
-              href='#acceptance'
-              tabindex='0'
-              >3. Порядок заключения договора</a
-            >
-          </li>
-          <li>
-            <a
-              href='#responsibilities'
-              tabindex='0'
-              >4. Права и обязанности сторон</a
-            >
-          </li>
-          <li>
-            <a
-              href='#payment'
-              tabindex='0'
-              >5. Стоимость услуг и порядок оплаты</a
-            >
-          </li>
-          <li>
-            <a
-              href='#liability'
-              tabindex='0'
-              >6. Ответственность сторон</a
-            >
-          </li>
-          <li>
-            <a
-              href='#termination'
-              tabindex='0'
-              >7. Срок действия и расторжение договора</a
-            >
-          </li>
-          <li>
-            <a
-              href='#final'
-              tabindex='0'
-              >8. Заключительные положения</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <Navigation items={navItems} />
       <article>
         <section
           id='general'

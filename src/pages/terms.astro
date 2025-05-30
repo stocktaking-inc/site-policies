@@ -1,10 +1,12 @@
 ---
 import Footer from '../components/Footer/Footer.astro'
+import Navigation from '../components/Navigation/Navigation.astro'
 
-import '@/styles/font.css'
+import '@/styles/reset.css'
+import '../components/Fonts/font.css'
 import '@/styles/layout.css'
 import '@/styles/misc.css'
-import '@/styles/navigation.css'
+import '../components/Navigation/Navigation.css'
 import '@/styles/sidebar.css'
 
 const operator = 'SmartTally'
@@ -12,6 +14,17 @@ const msrn = 'xxxxxxxxxxxxxxx'
 const tin = 'xxxxxxxxxxxx'
 const email = 'Jlwxd@mail.ru'
 const tel_num = '8-800-555-35-55'
+
+const navItems = [
+  { href: '#general', text: '1. Общие положения' },
+  { href: '#usage', text: '2. Условия использования сервиса' },
+  { href: '#data', text: '3. Сбор и использование данных' },
+  { href: '#rights', text: '4. Права пользователя' },
+  { href: '#security', text: '5. Безопасность данных' },
+  { href: '#termination', text: '6. Прекращение использования' },
+  { href: '#liability', text: '7. Ограничение ответственности' },
+  { href: '#changes', text: '8. Изменения условий' }
+]
 ---
 
 <html lang='ru'>
@@ -59,66 +72,7 @@ const tel_num = '8-800-555-35-55'
           <p>Welcome to Stocktaking inc.</p>
         </section>
       </article>
-      <nav aria-label='Оглавление'>
-        <ul>
-          <li>
-            <a
-              href='#general'
-              tabindex='0'
-              >1. Общие положения</a
-            >
-          </li>
-          <li>
-            <a
-              href='#usage'
-              tabindex='0'
-              >2. Условия использования сервиса</a
-            >
-          </li>
-          <li>
-            <a
-              href='#data'
-              tabindex='0'
-              >3. Сбор и использование данных</a
-            >
-          </li>
-          <li>
-            <a
-              href='#rights'
-              tabindex='0'
-              >4. Права пользователя</a
-            >
-          </li>
-          <li>
-            <a
-              href='#security'
-              tabindex='0'
-              >5. Безопасность данных</a
-            >
-          </li>
-          <li>
-            <a
-              href='#termination'
-              tabindex='0'
-              >6. Прекращение использования</a
-            >
-          </li>
-          <li>
-            <a
-              href='#liability'
-              tabindex='0'
-              >7. Ограничение ответственности</a
-            >
-          </li>
-          <li>
-            <a
-              href='#changes'
-              tabindex='0'
-              >8. Изменения условий</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <Navigation items={navItems} />
       <article>
         <section
           id='general'

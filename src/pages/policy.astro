@@ -1,10 +1,12 @@
 ---
 import Footer from '../components/Footer/Footer.astro'
+import Navigation from '../components/Navigation/Navigation.astro'
 
-import '@/styles/font.css'
+import '@/styles/reset.css'
+import '../components/Fonts/font.css'
 import '@/styles/layout.css'
 import '@/styles/misc.css'
-import '@/styles/navigation.css'
+import '../components/Navigation/Navigation.css'
 import '@/styles/sidebar.css'
 
 const operator = 'SmartTally'
@@ -12,6 +14,22 @@ const msrn = 'xxxxxxxxxxxxxxx'
 const tin = 'xxxxxxxxxxxx'
 const email = 'Jlwxd@mail.ru'
 const tel_num = '8-800-555-35-55'
+
+const navItems = [
+  { href: '#operator', text: '1. Оператор персональных данных' },
+  { href: '#definitions', text: '2. Определения' },
+  { href: '#categories', text: '3. Категории собираемых данных' },
+  { href: '#purposes', text: '4. Цели обработки' },
+  { href: '#legal-basis', text: '5. Правовые основания' },
+  { href: '#transfer', text: '6. Передача данных' },
+  { href: '#cross-border', text: '7. Трансграничная передача' },
+  { href: '#cookies', text: '8. Cookies и аналитика' },
+  { href: '#security', text: '9. Безопасность' },
+  { href: '#rights', text: '10. Права субъектов' },
+  { href: '#retention', text: '11. Сроки хранения' },
+  { href: '#notification', text: '12. Уведомление Роскомнадзора' },
+  { href: '#changes', text: '13. Изменения в политике' }
+]
 ---
 
 <html lang='ru'>
@@ -59,101 +77,7 @@ const tel_num = '8-800-555-35-55'
           <p>Welcome to Stocktaking inc.</p>
         </selection>
       </article>
-      <nav aria-label='Оглавление'>
-        <ul>
-          <li>
-            <a
-              href='#operator'
-              tabindex='0'
-              >1. Оператор персональных данных</a
-            >
-          </li>
-          <li>
-            <a
-              href='#definitions'
-              tabindex='0'
-              >2. Определения</a
-            >
-          </li>
-          <li>
-            <a
-              href='#categories'
-              tabindex='0'
-              >3. Категории собираемых данных</a
-            >
-          </li>
-          <li>
-            <a
-              href='#purposes'
-              tabindex='0'
-              >4. Цели обработки</a
-            >
-          </li>
-          <li>
-            <a
-              href='#legal'
-              tabindex='0'
-              >5. Правовые основания</a
-            >
-          </li>
-          <li>
-            <a
-              href='#sharing'
-              tabindex='0'
-              >6. Передача данных</a
-            >
-          </li>
-          <li>
-            <a
-              href='#crossborder'
-              tabindex='0'
-              >7. Трансграничная передача</a
-            >
-          </li>
-          <li>
-            <a
-              href='#cookies'
-              tabindex='0'
-              >8. Cookies и аналитика</a
-            >
-          </li>
-          <li>
-            <a
-              href='#security'
-              tabindex='0'
-              >9. Безопасность</a
-            >
-          </li>
-          <li>
-            <a
-              href='#rights'
-              tabindex='0'
-              >10. Права субъектов</a
-            >
-          </li>
-          <li>
-            <a
-              href='#retention'
-              tabindex='0'
-              >11. Сроки хранения</a
-            >
-          </li>
-          <li>
-            <a
-              href='#roskomnadzor'
-              tabindex='0'
-              >12. Уведомление Роскомнадзора</a
-            >
-          </li>
-          <li>
-            <a
-              href='#changes'
-              tabindex='0'
-              >13. Изменения в политике</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <Navigation items={navItems} />
       <article>
         <section
           id='operator'

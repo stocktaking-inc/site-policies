@@ -1,0 +1,27 @@
+---
+import './Navigation.css'
+
+const { items } = Astro.props
+---
+
+<div class='nav-wrapper'>
+  <nav
+    aria-label='Оглавление'
+    class='decorator'
+  >
+    <ul>
+      {
+        items.map(item => (
+          <li>
+            <a
+              href={item.href}
+              tabindex='0'
+            >
+              {item.text}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</div>

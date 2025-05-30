@@ -23,26 +23,6 @@ nav[aria-label='Оглавление']::after {
   bottom: -10px;
 }
 
-nav[aria-label='Оглавление'].decorator::before,
-nav[aria-label='Оглавление'].decorator::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 8px;
-  height: 8px;
-  background: #a39686;
-  border: 1px solid #e6e3de;
-}
-
-nav[aria-label='Оглавление'].decorator::before::after {
-  top: -14px;
-}
-
-nav[aria-label='Оглавление'].decorator::after::after {
-  bottom: -14px;
-}
-
 nav[aria-label='Оглавление'] ul {
   list-style: none;
   padding: 0;
@@ -99,8 +79,8 @@ nav[aria-label='Оглавление'] a::before {
     transform: translateX(3px);
   }
 
-  nav[aria-label='Оглавление'].decorator::before::after,
-  nav[aria-label='Оглавление'].decorator::after::after {
+  nav[aria-label='Оглавление'].decorator::before,
+  nav[aria-label='Оглавление'].decorator::after {
     width: 6px;
     height: 6px;
   }
