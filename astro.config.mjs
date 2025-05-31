@@ -8,6 +8,12 @@ export default defineConfig({
   output: 'static',
 
   vite: {
+    resolve: {
+      alias: {
+        '@styles': '/styles',
+        '@': '/src', 
+      },
+    },
     assetsInclude: ['**/*.woff2']
   },
 
