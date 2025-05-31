@@ -11,8 +11,8 @@ export default defineConfig({
     resolve: {
       alias: {
         '@styles': '/styles',
-        '@': '/src', 
-      },
+        '@': '/src'
+      }
     },
     assetsInclude: ['**/*.woff2']
   },
