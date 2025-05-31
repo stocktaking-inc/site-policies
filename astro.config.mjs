@@ -10,7 +10,7 @@ export default defineConfig({
   vite: {
     assetsInclude: ['**/*.woff2']
   },
-  
+
   integrations: [
     sitemap({
       changefreq: 'weekly',
