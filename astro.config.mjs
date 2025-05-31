@@ -7,6 +7,10 @@ export default defineConfig({
   outDir: './dist',
   output: 'static',
 
+  vite: {
+    assetsInclude: ['**/*.woff2']
+  },
+  
   integrations: [
     sitemap({
       changefreq: 'weekly',
