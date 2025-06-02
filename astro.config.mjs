@@ -6,17 +6,7 @@ export default defineConfig({
   site: 'https://site-policies.vercel.app',
   outDir: './dist',
   output: 'static',
-
-  vite: {
-    resolve: {
-      alias: {
-        '@styles': '/styles',
-        '@': '/src'
-      }
-    },
-    assetsInclude: ['**/*.woff2']
-  },
-
+  
   integrations: [
     sitemap({
       changefreq: 'weekly',
