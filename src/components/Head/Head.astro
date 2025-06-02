@@ -1,61 +1,51 @@
 ---
-export interface Props {
-  title: string
-  description?: string
-  ogTitle?: string
-  ogDescription?: string
-  ogImage?: string
-  ogUrl?: string
-}
-
 const {
-  title,
-  description = '',
+  title = 'Stocktaking inc.',
+  description = 'Сервис инвентаризации для бизнеса',
   ogTitle = title,
   ogDescription = description,
   ogImage = 'https://site-policies.vercel.app/opengraph.jpg',
-  ogUrl = 'https://site-policies.vercel.app' + Astro.url.pathname
+  ogUrl = Astro.url.href
 } = Astro.props
 ---
 
-<meta charset='UTF-8' />
-<meta
-  name='viewport'
-  content='width=device-width, initial-scale=1.0'
-/>
-<title>{title}</title>
-<link
-  rel='icon'
-  type='image/png'
-  href='/icon.png'
-/>
+<head>
+  <meta charset='UTF-8' />
+  <meta
+    name='viewport'
+    content='width=device-width, initial-scale=1.0'
+  />
+  <title>{title}</title>
+  <link
+    rel='icon'
+    type='image/png'
+    href='/icon.png'
+  />
 
-<meta
-  property='og:title'
-  content={ogTitle}
-/>
-<meta
-  property='og:description'
-  content={ogDescription}
-/>
-<meta
-  property='og:image'
-  content={ogImage}
-/>
-<meta
-  property='og:url'
-  content={ogUrl}
-/>
-<meta
-  property='og:type'
-  content='website'
-/>
+  <meta
+    name='description'
+    content={description}
+  />
 
-{
-  description && (
-    <meta
-      name='description'
-      content={description}
-    />
-  )
-}
+  <meta
+    property='og:title'
+    content={ogTitle}
+  />
+  <meta
+    property='og:description'
+    content={ogDescription}
+  />
+  <meta
+    property='og:image'
+    content={ogImage}
+  />
+  <meta
+    property='og:url'
+    content={ogUrl}
+  />
+  <meta
+    property='og:type'
+    content='website'
+  />
+  <head></head>
+</head>
