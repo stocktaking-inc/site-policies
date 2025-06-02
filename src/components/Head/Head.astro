@@ -2,13 +2,27 @@
 const {
   title = 'Stocktaking inc.',
   description = 'Сервис инвентаризации для бизнеса',
-  keywords = 'инвентаризация, учет товаров, управление складом, бизнес аналитика, stocktaking, inventory management',
+  keywords = 'инвентаризация, учет товаров, управление складом',
   author = 'Stocktaking inc.',
   ogTitle = title,
   ogDescription = description,
-  ogImage = 'https://site-policies.vercel.app/opengraph.jpg',
-  ogUrl = Astro.url.href,
-  canonicalUrl = Astro.url.href
+  ogImage = '/opengraph-default.png',
+  ogUrl = new URL(Astro.url.pathname, 'https://stocktaking-inc.com').href,
+  ogType = 'website',
+  twitterCard = 'summary_large_image',
+  twitterTitle = 'Система инвентаризации | Stocktaking inc.',
+  twitterDescription = description,
+  twitterImage = ogImage,
+  twitterSite = '@stocktakinginc',
+  twitterCreator = '@stocktakinginc',
+  canonicalUrl = new URL(Astro.url.pathname, 'https://stocktaking-inc.com').href,
+  robots = 'index, follow',
+  themeColor = '#007bff',
+  geoPlacename = 'Russia',
+  geoPosition = '55.7558;37.6176',
+  icbm = '55.7558, 37.6176',
+  category = 'Inventory Management, Logistics, Retail',
+  locale = 'ru_RU'
 } = Astro.props
 ---
 
@@ -20,7 +34,7 @@ const {
   />
   <meta
     name='robots'
-    content='index, follow'
+    content={robots}
   />
 
   <title>{title}</title>
@@ -36,21 +50,45 @@ const {
     name='author'
     content={author}
   />
+  <meta
+    name='category'
+    content={category}
+  />
+
+  <meta
+    name='geo.placename'
+    content={geoPlacename}
+  />
+  <meta
+    name='geo.position'
+    content={geoPosition}
+  />
+  <meta
+    name='ICBM'
+    content={icbm}
+  />
 
   <link
     rel='canonical'
     href={canonicalUrl}
   />
-
   <link
     rel='icon'
-    type='image/png'
-    href='/icon.png'
+    href='/favicon.ico'
+  />
+
+  <meta
+    name='theme-color'
+    content={themeColor}
+  />
+  <meta
+    name='format-detection'
+    content='telephone=no, email=no'
   />
 
   <meta
     property='og:type'
-    content='website'
+    content={ogType}
   />
   <meta
     property='og:url'
@@ -71,5 +109,46 @@ const {
   <meta
     property='og:site_name'
     content={title}
+  />
+  <meta
+    property='og:locale'
+    content={locale}
+  />
+  <meta
+    property='og:image:width'
+    content='1200'
+  />
+  <meta
+    property='og:image:height'
+    content='630'
+  />
+
+  <meta
+    name='twitter:card'
+    content={twitterCard}
+  />
+  <meta
+    name='twitter:title'
+    content={twitterTitle}
+  />
+  <meta
+    name='twitter:description'
+    content={twitterDescription}
+  />
+  <meta
+    name='twitter:site'
+    content={twitterSite}
+  />
+  <meta
+    name='twitter:creator'
+    content={twitterCreator}
+  />
+  <meta
+    name='twitter:image'
+    content={twitterImage}
+  />
+  <meta
+    name='twitter:domain'
+    content='stocktaking-inc.com'
   />
 </head>
