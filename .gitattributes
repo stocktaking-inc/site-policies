@@ -7,3 +7,6 @@
 *.json      diff=json
 *.md        diff=markdown
 *.mjs       diff=javascript
+
+Makefile    text eol=lf
+Dockerfile  text eol=lf

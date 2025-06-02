@@ -10,5 +10,5 @@ WORKDIR /app
 RUN npm install -g http-server
 COPY --from=builder /app/dist ./dist
 RUN chmod -R 755 /app/dist
-EXPOSE 5432
-CMD ["http-server", "dist", "-p", "5432", "-a", "0.0.0.0", "--gzip", "--brotli"]
+EXPOSE 4321
+CMD ["http-server", "dist", "-p", "4321", "-a", "0.0.0.0", "--gzip", "--brotli"]
