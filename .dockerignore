@@ -2,6 +2,7 @@
 .github/
 .idea/
 node_modules/
+coverage/
 
 .editorconfig
 .gitattributes
