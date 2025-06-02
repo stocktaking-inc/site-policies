@@ -1,30 +1,16 @@
 ---
 import Footer from '../components/Footer/Footer.astro'
 import Navigation from '../components/Navigation/Navigation.astro'
+import LastUpdate from '../components/LastUpdate/LastUpdate.astro'
 
 import '~/styles/reset.css'
 import '@/components/Fonts/font.css'
 import '~/styles/layout.css'
 import '~/styles/misc.css'
 import '@/components/Navigation/Navigation.css'
-import '~/styles/sidebar.css'
 
-const operator = 'SmartTally'
-const msrn = 'xxxxxxxxxxxxxxx'
-const tin = 'xxxxxxxxxxxx'
-const email = 'Jlwxd@mail.ru'
-const tel_num = '8-800-555-35-55'
-
-const navItems = [
-  { href: '#general', text: '1. Общие положения' },
-  { href: '#subject', text: '2. Предмет договора' },
-  { href: '#acceptance', text: '3. Порядок заключения договора' },
-  { href: '#responsibilities', text: '4. Права и обязанности сторон' },
-  { href: '#payment', text: '5. Стоимость услуг и порядок оплаты' },
-  { href: '#liability', text: '6. Ответственность сторон' },
-  { href: '#termination', text: '7. Срок действия и расторжение договора' },
-  { href: '#final', text: '8. Заключительные положения' }
-]
+import { COMPANY } from '../constants'
+import { NAV_ITEMS_OFFER } from '../constants'
 ---
 
 <html lang='ru'>
@@ -66,16 +52,8 @@ const navItems = [
       <header>
         <h1>Публичная оферта</h1>
       </header>
-      <article>
-        <div class='last-update'>Last Update: May 10, 2025</div>
-        <section>
-          <p>Welcome to Stocktaking inc.</p>
-          <p>
-            Настоящая публичная оферта регулирует порядок предоставления услуг сервиса «SmartTally».
-          </p>
-        </section>
-      </article>
-      <Navigation items={navItems} />
+      <LastUpdate />
+      <Navigation items={NAV_ITEMS_OFFER} />
       <article>
         <section
           id='general'
@@ -89,19 +67,17 @@ const navItems = [
             инвентаризации логистических и торговых микро-предприятий.
           </p>
           <address>
-            <p>Оператор: <strong>{operator}</strong></p>
-            <p>ОГРН: <strong>{msrn}</strong>, ИНН: <strong>{tin}</strong></p>
-            <address>
-              Контакт: <a
-                href='mailto:Jlwxd@mail.ru'
-                tabindex='0'
-                >{email}</a
-              >, тел: <a
-                href='tel:8-800-555-35-55'
-                tabindex='0'
-                >{tel_num}</a
-              >
-            </address>
+            <p>Оператор: {COMPANY.operator}</p>
+            <p>ОГРН: {COMPANY.msrn}, ИНН: {COMPANY.tin}</p>
+            Контакт: <a
+              href={`mailto:${COMPANY.email}`}
+              tabindex='0'
+              >{COMPANY.email}</a
+            >, Тел: <a
+              href={`tel:${COMPANY.tel}`}
+              tabindex='0'
+              >{COMPANY.tel}</a
+            >
           </address>
         </section>
         <section

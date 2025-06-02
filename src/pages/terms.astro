@@ -7,24 +7,9 @@ import '@/components/Fonts/font.css'
 import '~/styles/layout.css'
 import '~/styles/misc.css'
 import '@/components/Navigation/Navigation.css'
-import '~/styles/sidebar.css'
 
-const operator = 'SmartTally'
-const msrn = 'xxxxxxxxxxxxxxx'
-const tin = 'xxxxxxxxxxxx'
-const email = 'Jlwxd@mail.ru'
-const tel_num = '8-800-555-35-55'
-
-const navItems = [
-  { href: '#general', text: '1. Общие положения' },
-  { href: '#usage', text: '2. Условия использования сервиса' },
-  { href: '#data', text: '3. Сбор и использование данных' },
-  { href: '#rights', text: '4. Права пользователя' },
-  { href: '#security', text: '5. Безопасность данных' },
-  { href: '#termination', text: '6. Прекращение использования' },
-  { href: '#liability', text: '7. Ограничение ответственности' },
-  { href: '#changes', text: '8. Изменения условий' }
-]
+import { COMPANY } from '../constants'
+import { NAV_ITEMS_TERMS } from '../constants'
 ---
 
 <html lang='ru'>
@@ -72,7 +57,7 @@ const navItems = [
           <p>Welcome to Stocktaking inc.</p>
         </section>
       </article>
-      <Navigation items={navItems} />
+      <Navigation items={NAV_ITEMS_TERMS} />
       <article>
         <section
           id='general'
@@ -85,19 +70,17 @@ const navItems = [
             логистических и торговых микро-предприятий».
           </p>
           <address>
-            <p>Оператор: <strong>{operator}</strong></p>
-            <p>ОГРН: <strong>{msrn}</strong>, ИНН: <strong>{tin}</strong></p>
-            <address>
-              Контакт: <a
-                href='mailto:Jlwxd@mail.ru'
-                tabindex='0'
-                >{email}</a
-              >, тел: <a
-                href='tel:8-800-555 35 55'
-                tabindex='0'
-                >{tel_num}</a
-              >
-            </address>
+            <p>Оператор: {COMPANY.operator}</p>
+            <p>ОГРН: {COMPANY.msrn}, ИНН: {COMPANY.tin}</p>
+            Контакт: <a
+              href={`mailto:${COMPANY.email}`}
+              tabindex='0'
+              >{COMPANY.email}</a
+            >, Тел: <a
+              href={`tel:${COMPANY.tel}`}
+              tabindex='0'
+              >{COMPANY.tel}</a
+            >
           </address>
         </section>
         <section

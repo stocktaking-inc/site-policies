@@ -7,29 +7,9 @@ import '@/components/Fonts/font.css'
 import '~/styles/layout.css'
 import '~/styles/misc.css'
 import '@/components/Navigation/Navigation.css'
-import '~/styles/sidebar.css'
 
-const operator = 'SmartTally'
-const msrn = 'xxxxxxxxxxxxxxx'
-const tin = 'xxxxxxxxxxxx'
-const email = 'Jlwxd@mail.ru'
-const tel_num = '8-800-555-35-55'
-
-const navItems = [
-  { href: '#operator', text: '1. Оператор персональных данных' },
-  { href: '#definitions', text: '2. Определения' },
-  { href: '#categories', text: '3. Категории собираемых данных' },
-  { href: '#purposes', text: '4. Цели обработки' },
-  { href: '#legal-basis', text: '5. Правовые основания' },
-  { href: '#transfer', text: '6. Передача данных' },
-  { href: '#cross-border', text: '7. Трансграничная передача' },
-  { href: '#cookies', text: '8. Cookies и аналитика' },
-  { href: '#security', text: '9. Безопасность' },
-  { href: '#rights', text: '10. Права субъектов' },
-  { href: '#retention', text: '11. Сроки хранения' },
-  { href: '#notification', text: '12. Уведомление Роскомнадзора' },
-  { href: '#changes', text: '13. Изменения в политике' }
-]
+import { COMPANY } from '../constants'
+import { NAV_ITEMS_POLICY } from '../constants'
 ---
 
 <html lang='ru'>
@@ -77,7 +57,7 @@ const navItems = [
           <p>Welcome to Stocktaking inc.</p>
         </selection>
       </article>
-      <Navigation items={navItems} />
+      <Navigation items={NAV_ITEMS_POLICY} />
       <article>
         <section
           id='operator'
@@ -85,17 +65,17 @@ const navItems = [
           aria-labelledby='operator-heading'
         >
           <h2 id='operator-heading'>1. Оператор персональных данных</h2>
-          <p>Оператор: <strong>{operator}</strong></p>
-          <p>ОГРН: <strong>{msrn}</strong>, ИНН: <strong>{tin}</strong></p>
           <address>
+            <p>Оператор: {COMPANY.operator}</p>
+            <p>ОГРН: {COMPANY.msrn}, ИНН: {COMPANY.tin}</p>
             Контакт: <a
-              href='mailto:Jlwxd@mail.ru'
+              href={`mailto:${COMPANY.email}`}
               tabindex='0'
-              >{email}</a
-            >, тел: <a
-              href='tel:8-800-555 35 55'
+              >{COMPANY.email}</a
+            >, Тел: <a
+              href={`tel:${COMPANY.tel}`}
               tabindex='0'
-              >{tel_num}</a
+              >{COMPANY.tel}</a
             >
           </address>
         </section>
@@ -225,9 +205,9 @@ const navItems = [
           </ul>
           <p>
             Запросы направляйте по адресу: <a
-              href='mailto:Jlwxd@mail.ru'
+              href={`mailto:${COMPANY.email}`}
               tabindex='0'
-              >{email}</a
+              >{COMPANY.email}</a
             >. Ответ в течение 30 дней.
           </p>
         </section>

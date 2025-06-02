@@ -1,0 +1,14 @@
+---
+import '../LastUpdate/lastUpdate.css'
+
+import { getLastUpdate } from './lastUpdate'
+
+const lastUpdate = await getLastUpdate()
+---
+
+<article>
+  <div class='last-update'>Последнее обновление: {lastUpdate}</div>
+  <section>
+    <p>Добро пожаловать в Stocktaking inc.</p>
+  </section>
+</article>
