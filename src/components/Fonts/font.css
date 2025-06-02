@@ -1,8 +1,9 @@
 @font-face {
   font-family: Raleway;
   src:
-    url('../components/Fonts/Raleway-Regular.woff') format('woff2'),
-    url('../components/Fonts/Raleway-Regular.woff2') format('woff');
+    local('Raleway-Regular'),
+    url ('../Fonts/Raleway-Regular.woff2') format('woff2'),
+    url ('../Fonts/Raleway-Regular.woff') format('woff2');
   font-weight: normal;
   font-display: swap;
 }
@@ -10,8 +11,9 @@
 @font-face {
   font-family: Raleway;
   src:
-    url('../components/Fonts/Raleway-Bold.woff') format('woff2'),
-    url('../components/Fonts/Raleway-Bold.woff2') format('woff');
+    local('Raleway-Bold'),
+    url ('../Fonts/Raleway-Bold.woff2') format('woff2'),
+    url ('../Fonts/Raleway-Bold.woff') format('woff');
   font-weight: bold;
   font-display: swap;
 }

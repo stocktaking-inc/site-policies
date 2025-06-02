@@ -4,17 +4,15 @@ a {
 }
 
 a:hover {
-  color: #e6e3de;
+  color: #89806f;
   text-decoration: underline;
 }
 
 address {
   font-style: normal;
-  margin: 15px 0;
   color: #e6e3de;
 }
 
 address a {
-  margin-right: 10px;
-  color: #fefefe;
+  color: #a39686;
 }
