@@ -2,10 +2,13 @@
 const {
   title = 'Stocktaking inc.',
   description = 'Сервис инвентаризации для бизнеса',
+  keywords = 'инвентаризация, учет товаров, управление складом, бизнес аналитика, stocktaking, inventory management',
+  author = 'Stocktaking inc.',
   ogTitle = title,
   ogDescription = description,
   ogImage = 'https://site-policies.vercel.app/opengraph.jpg',
-  ogUrl = Astro.url.href
+  ogUrl = Astro.url.href,
+  canonicalUrl = Astro.url.href
 } = Astro.props
 ---
 
@@ -15,7 +18,30 @@ const {
     name='viewport'
     content='width=device-width, initial-scale=1.0'
   />
+  <meta
+    name='robots'
+    content='index, follow'
+  />
+
   <title>{title}</title>
+  <meta
+    name='description'
+    content={description}
+  />
+  <meta
+    name='keywords'
+    content={keywords}
+  />
+  <meta
+    name='author'
+    content={author}
+  />
+
+  <link
+    rel='canonical'
+    href={canonicalUrl}
+  />
+
   <link
     rel='icon'
     type='image/png'
@@ -23,10 +49,13 @@ const {
   />
 
   <meta
-    name='description'
-    content={description}
+    property='og:type'
+    content='website'
   />
-
+  <meta
+    property='og:url'
+    content={ogUrl}
+  />
   <meta
     property='og:title'
     content={ogTitle}
@@ -40,12 +69,7 @@ const {
     content={ogImage}
   />
   <meta
-    property='og:url'
-    content={ogUrl}
+    property='og:site_name'
+    content={title}
   />
-  <meta
-    property='og:type'
-    content='website'
-  />
-  <head></head>
 </head>
