@@ -6,7 +6,7 @@ export default defineConfig({
   site: 'https://site-policies.vercel.app',
   outDir: './dist',
   output: 'static',
-  
+
   integrations: [
     sitemap({
       changefreq: 'weekly',
