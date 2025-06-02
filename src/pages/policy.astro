@@ -1,7 +1,7 @@
 ---
 import Footer from '../components/Footer/Footer.astro'
 import Navigation from '../components/Navigation/Navigation.astro'
-import FontLoader from '../components/FontLoader.astro'
+import Pointer from '../components/Pointer/Pointer.astro'
 
 import '@styles/reset.css'
 import '@/components/fonts/font.css'
@@ -40,7 +40,7 @@ const navItems = [
       name='viewport'
       content='width=device-width, initial-scale=1.0'
     />
-    <title>Privacy policy</title>
+    <title>Политика конфидециальности</title>
     <link
       rel='icon'
       type='image/png'
@@ -68,7 +68,6 @@ const navItems = [
     />
   </head>
   <body>
-    <FontLoader />
     <main>
       <header>
         <h1>Политика конфиденциальности</h1>
@@ -141,7 +140,7 @@ const navItems = [
           </ul>
         </section>
         <section
-          id='legal'
+          id='legal-basis'
           role='region'
           aria-labelledby='legal-heading'
         >
@@ -154,7 +153,7 @@ const navItems = [
           </ul>
         </section>
         <section
-          id='sharing'
+          id='transfer'
           role='region'
           aria-labelledby='sharing-heading'
         >
@@ -168,7 +167,7 @@ const navItems = [
           <p>Во всех случаях обеспечивается защита данных договорными обязательствами.</p>
         </section>
         <section
-          id='crossborder'
+          id='cross-border'
           role='region'
           aria-labelledby='crossborder-heading'
         >
@@ -267,7 +266,8 @@ const navItems = [
           </p>
         </section>
       </article>
-      <Footer />
+      <Pointer />
     </main>
+    <Footer />
   </body>
 </html>

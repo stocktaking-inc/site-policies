@@ -1,3 +1,28 @@
+@font-face {
+  font-family: Raleway;
+  src:
+    url('../components/Fonts/Raleway-Regular.woff') format('woff2'),
+    url('../components/Fonts/Raleway-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  src:
+    url('../components/Fonts/Raleway-Bold.woff') format('woff2'),
+    url('../components/Fonts/Raleway-Bold.woff2') format('woff');
+  font-weight: bold;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cdcac3;
+}
+
 h1 {
   font: 700 2.5em/1.2 inherit;
   color: #fefefe;

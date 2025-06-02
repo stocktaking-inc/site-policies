@@ -1,7 +1,7 @@
 ---
 import Footer from '../components/Footer/Footer.astro'
 import Navigation from '../components/Navigation/Navigation.astro'
-import FontLoader from '../components/FontLoader.astro'
+import Pointer from '../components/Pointer/Pointer.astro'
 
 import '@styles/reset.css'
 import '@/components/fonts/font.css'
@@ -35,7 +35,7 @@ const navItems = [
       name='viewport'
       content='width=device-width, initial-scale=1.0'
     />
-    <title>Public offer</title>
+    <title>Публичная оферта</title>
     <link
       rel='icon'
       type='image/png'
@@ -63,7 +63,6 @@ const navItems = [
     />
   </head>
   <body>
-    <FontLoader />
     <main>
       <header>
         <h1>Публичная оферта</h1>
@@ -200,7 +199,8 @@ const navItems = [
           </p>
         </section>
       </article>
-      <Footer />
+      <Pointer />
     </main>
+    <Footer />
   </body>
 </html>
