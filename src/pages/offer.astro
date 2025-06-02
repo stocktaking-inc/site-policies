@@ -2,6 +2,7 @@
 import Footer from '../components/Footer/Footer.astro'
 import Navigation from '../components/Navigation/Navigation.astro'
 import LastUpdate from '../components/LastUpdate/LastUpdate.astro'
+import Head from '../components/Head/Head.astro'
 
 import '~/styles/reset.css'
 import '@/components/Fonts/font.css'
@@ -15,36 +16,12 @@ import { NAV_ITEMS_OFFER } from '../constants'
 
 <html lang='ru'>
   <head>
-    <meta charset='UTF-8' />
-    <meta
-      name='viewport'
-      content='width=device-width, initial-scale=1.0'
-    />
-    <title>Публичная оферта</title>
-    <link
-      rel='icon'
-      type='image/png'
-      href='/icon.png'
-    />
-    <meta
-      property='og:title'
-      content='Public offer — Stocktaking inc.'
-    />
-    <meta
-      property='og:description'
-      content='Публичная оферта сервиса инвентаризации от Stocktaking inc.'
-    />
-    <meta
-      property='og:image'
-      content='https://site-policies.vercel.app/opengraph.jpg'
-    />
-    <meta
-      property='og:url'
-      content='https://site-policies.vercel.app/offer'
-    />
-    <meta
-      property='og:type'
-      content='website'
+    <Head
+      title='Публичная оферта'
+      description='Условия публичной оферты сервиса инвентаризации от Stocktaking inc.'
+      ogTitle='Public offer — Stocktaking inc.'
+      ogDescription='Публичная оферта сервиса инвентаризации от Stocktaking inc.'
+      ogUrl='https://site-policies.vercel.app/offer'
     />
   </head>
   <body>
@@ -63,7 +40,7 @@ import { NAV_ITEMS_OFFER } from '../constants'
           <h2 id='general-heading'>1. Общие положения</h2>
           <p>
             Настоящая публичная оферта (далее — Оферта) является официальным предложением оператора
-            «SmartTally» к заключению договора на оказание услуг по использованию системы
+            «{COMPANY.operator}» к заключению договора на оказание услуг по использованию системы
             инвентаризации логистических и торговых микро-предприятий.
           </p>
           <address>
@@ -87,9 +64,9 @@ import { NAV_ITEMS_OFFER } from '../constants'
         >
           <h2 id='subject-heading'>2. Предмет договора</h2>
           <p>
-            Оператор предоставляет Пользователю доступ к сервису «SmartTally» для автоматизации
-            процессов инвентаризации, управления складом и учёта товаров. Услуги предоставляются
-            через веб-интерфейс.
+            Оператор предоставляет Пользователю доступ к сервису «{COMPANY.operator}» для
+            автоматизации процессов инвентаризации, управления складом и учёта товаров. Услуги
+            предоставляются через веб-интерфейс.
           </p>
         </section>
         <section
@@ -100,8 +77,8 @@ import { NAV_ITEMS_OFFER } from '../constants'
           <h2 id='acceptance-heading'>3. Порядок заключения договора</h2>
           <p>
             Договор считается заключённым с момента принятия условий Оферты Пользователем. Принятие
-            условий осуществляется путём начала использования сервиса «SmartTally» (например,
-            регистрация или вход в систему).
+            условий осуществляется путём начала использования сервиса «{COMPANY.operator}»
+            (например, регистрация или вход в систему).
           </p>
         </section>
         <section
@@ -130,9 +107,9 @@ import { NAV_ITEMS_OFFER } from '../constants'
         >
           <h2 id='payment-heading'>5. Стоимость услуг и порядок оплаты</h2>
           <p>
-            На текущий момент услуги сервиса «SmartTally» предоставляются бесплатно. Оператор
-            оставляет за собой право ввести плату за дополнительные функции, уведомив Пользователя
-            заранее.
+            На текущий момент услуги сервиса «{COMPANY.operator}» предоставляются бесплатно.
+            Оператор оставляет за собой право ввести плату за дополнительные функции, уведомив
+            Пользователя заранее.
           </p>
         </section>
         <section

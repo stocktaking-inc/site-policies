@@ -1,5 +1,5 @@
 export const COMPANY = {
-  operator: 'SmartTally',
+  operator: 'Stocktaking System',
   msrn: 'xxxxxxxxxxxxxxx',
   tin: 'xxxxxxxxxxxx',
   email: 'Jlwxd@mail.ru',

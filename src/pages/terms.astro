@@ -1,6 +1,8 @@
 ---
 import Footer from '../components/Footer/Footer.astro'
 import Navigation from '../components/Navigation/Navigation.astro'
+import LastUpdate from '../components/LastUpdate/LastUpdate.astro'
+import Head from '../components/Head/Head.astro'
 
 import '~/styles/reset.css'
 import '@/components/Fonts/font.css'
@@ -14,36 +16,12 @@ import { NAV_ITEMS_TERMS } from '../constants'
 
 <html lang='ru'>
   <head>
-    <meta charset='UTF-8' />
-    <meta
-      name='viewport'
-      content='width=device-width, initial-scale=1.0'
-    />
-    <title>Условия пользования</title>
-    <link
-      rel='icon'
-      type='image/png'
-      href='/icon.png'
-    />
-    <meta
-      property='og:title'
-      content='Terms of usage — Stocktaking inc.'
-    />
-    <meta
-      property='og:description'
-      content='Правила и условия использования сервиса инвентаризации от Stocktaking inc.'
-    />
-    <meta
-      property='og:image'
-      content='https://site-policies.vercel.app/opengraph.jpg'
-    />
-    <meta
-      property='og:url'
-      content='https://site-policies.vercel.app/terms'
-    />
-    <meta
-      property='og:type'
-      content='website'
+    <Head
+      title='Условия пользования'
+      description='Правила и условия использования сервиса инвентаризации от Stocktaking inc.'
+      ogTitle='Terms of usage — Stocktaking inc.'
+      ogDescription='Правила и условия использования сервиса инвентаризации от Stocktaking inc.'
+      ogUrl='https://site-policies.vercel.app/terms'
     />
   </head>
   <body>
@@ -51,12 +29,7 @@ import { NAV_ITEMS_TERMS } from '../constants'
       <header>
         <h1>Условия использования</h1>
       </header>
-      <article>
-        <div class='last-update'>Last Update: May 10, 2025</div>
-        <section>
-          <p>Welcome to Stocktaking inc.</p>
-        </section>
-      </article>
+      <LastUpdate />
       <Navigation items={NAV_ITEMS_TERMS} />
       <article>
         <section
