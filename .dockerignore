@@ -13,3 +13,5 @@ coverage/
 *.md
 eslint.config.js
 lefthook.yml
+docs/
+Dockerfile
