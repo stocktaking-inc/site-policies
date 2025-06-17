@@ -22,7 +22,7 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.4.0",
     "@evilmartians/lefthook": "^1.11.13",
-    "astro": "^5.7.14",
+    "astro": "^5.9.3",
     "astro-compressor": "^1.0.0"
   },
   "devDependencies": {
