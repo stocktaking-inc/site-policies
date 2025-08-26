@@ -20,7 +20,7 @@
     }
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.4.0",
+    "@astrojs/sitemap": "^3.5.1",
     "@evilmartians/lefthook": "^1.11.13",
     "astro": "^5.7.14",
     "astro-compressor": "^1.0.0"
